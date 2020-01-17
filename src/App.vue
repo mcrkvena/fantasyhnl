@@ -13,7 +13,7 @@
         </ul>
         <router-link v-if="!authenticated" class="btn btn-outline my-2 my-sm-0 mr-2" to="/login">Prijava</router-link>
         <span v-if="authenticated">
-                  {{ userEmail }}
+                  {{ myuser }}
                   <a @click="logout" class="btn btn-info my-2 my-sm-0 mr-2" href="#">Odjava</a>
         </span>
         <router-link v-if="!authenticated" class="btn btn-outline my-2 my-sm-0 mr-2" to="/register">Registracija</router-link>
@@ -44,6 +44,19 @@ export default {
       if (user) {
         console.log("Korisnik je prijavljen kao " + user.email)
         this.authenticated = true
+        db.collection("users")
+          .doc(user.email)
+          .get()
+          .then(doc => {
+              if (doc.exists) {
+                console.log("Document data:", doc.data());
+                this.myuser = doc.data().username;
+                this.myteam = doc.data().teamname;
+              } else {
+                // doc.data() will be undefined in this case
+                console.log("No such document!");
+              }
+          });
         this.userEmail = user.email
         if (this.$route.name !== 'team')
           this.$router.push({name: 'team'}).catch(err => console.log(err))

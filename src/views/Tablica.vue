@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron jumbotron-fluid" style="padding: 0.5em; background-image: url(teren.jpg); background-repeat:no-repeat; background-size:90%; height: 900px; background-position: left">
-    <h1 class="display-2" style="font-family:Cuprum; text-align:center; margin-right:100px; color: black; font-size:90px;"><b>1. HNL</b></h1>
-    <table style="width: 56%; font-family:Cuprum; font-size:28px; margin-left:320px; color:black; margin-top:30px;">
+  <h1 class="display-2" style="font-family:Cuprum; text-align:center; margin-right:100px; color: black; font-size:90px;"><b>1. HNL</b></h1>
+  <table style="width: 56%; font-family:Cuprum; font-size:28px; margin-left:320px; color:black; margin-top:30px;">
   <tr>
     <th></th>
     <th></th>

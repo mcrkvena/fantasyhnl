@@ -20,7 +20,7 @@
                             <div class="form-group">
                             <input v-model="teamname" type="text" class="form-control" id="exampleInputTeam1" placeholder="NAZIV EKIPE"/>
                             </div>
-                            <button type="submit" v-on:click="MyTeam()" class="btn btn-primary" style="margin-top:10px;background-color:green;border-radius:25px; font-size:20px; color:black; border: none;">REGISTRIRAJ SE</button>
+                            <button type="submit" class="btn btn-primary" style="margin-top:10px;background-color:green;border-radius:25px; font-size:20px; color:black; border: none;">REGISTRIRAJ SE</button>
                             <div>
                             <router-link class="btn btn-primary" to="/#" style="margin-top:15px;background-color:red;border-radius:25px; font-size:18px; color:black; border: none;">ODUSTANI</router-link>
                             </div>
@@ -37,22 +37,21 @@
 export default {  
     data() {
             return {    
-                    email: '',
-                    username: '',
-                    password: '',
-                    teamname: ''
+                    email: "",
+                    username: "",
+                    password: "",
+                    teamname: ""
         }
     },
     methods: {
         signup(){
-            firebase.auth().createUserWithEmailAndPassword(this.email,this.password).catch(function(error){
-                console.log(error)
-            });
-        },
-        MyTeam(){
-            var mojtim=document.getElementById("exampleInputTeam1").value;
-            console.log(document.getElementById('exampleInputTeam1').value)
-            localStorage.setItem("name", mojtim);
+            firebase.auth().createUserWithEmailAndPassword(this.email,this.password).then(() => {
+                let id = this.email;
+                db.collection("users").doc(id).set({
+                    teamname: this.teamname,
+                    username: this.username
+                })
+            })
         }
     }
 }
