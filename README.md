@@ -7,12 +7,12 @@ Ciljana publika: ljubitelji nogometa
 
 # POSTAVLJANJE APLIKACIJE
 
-otvorite command prompt (cmd.exe)
-navigirajte do željenog direktorija (npr. "cd C:\Downloads")
-upišite "git clone https://github.com/mcrkvena/fantasyhnl.git"
-upišite "cd fantasyhnl"
-ako imate instaliran yarn, upišite "yarn serve", ako ne, upišite "npm install" te "npm run serve" nakon instalacije
-aplikaciji onda možete pristupiti putem localhosta na lokalnom serveru (http://localhost:8080/ ili http://localhost:8081/)
+1. otvorite command prompt (cmd.exe)
+2. navigirajte do željenog direktorija (npr. "cd C:\Downloads")
+3. upišite "git clone https://github.com/mcrkvena/fantasyhnl.git"
+4. upišite "cd fantasyhnl"
+5. ako imate instaliran yarn, upišite "yarn serve", ako ne, upišite "npm install" te "npm run serve" nakon instalacije
+6. aplikaciji onda možete pristupiti putem localhosta na lokalnom serveru (http://localhost:8080/ ili http://localhost:8081/)
 
 # KAKO APLIKACIJA FUNKCIONIRA
 
