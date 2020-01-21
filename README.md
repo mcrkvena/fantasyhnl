@@ -22,10 +22,9 @@
   3. Odabir igrača: Nakon registracije ili prijave, korisnik dolazi do kartice Moj Tim u kojoj iz 11 izbornika vrši izbor željenih igrača      bez ikakvih ograničenja (osim nemogućnosti biranja istog igrača na dvije pozicije). Prilikom odabira, dolazi do promjene slike igrača      UKOLIKO JE ONA DOSTUPNA. Nakon što korisnik odabere 11 igrača, postaje mu dostupna tipka Zaključaj Tim koja odabrane igrače šalje na      bazu podataka u firebase. Pri ponovnom učitavanju stranice, ti se podaci povlače iz firebase-a te se automatski prikazuju.
   
   4. Bodovanje: Svaki igrač ima 0, 1 ili 3 boda za svako kolo, ovisno o tome je li njegov tim pobjedio, izgubio ili remizirao.
-     Igrači koji tu utakmicu nisu odigrali, a njihov tim je pobjedio, dobijaju 2 boda.
      Računanje bodova za korisnikov tim izvodi se na način da se uzme prosječni broj bodova svih 11 igrača za određeno kolo te na temelju      rezultata korisnikovom se timu piše pobjeda (za prosječni proj bodova veći od 2.01), neriješeno (za prosječni broj bodova između 1.01      i 2.00) ili poraz (za prosječni broj bodova manji od 1.00)
   
   Update 17.1.2020: localStorage zamijenjen firebase firestore-om
   
 \\WORK IN PROGRESS//
-  to do: Bodovni sustav 
+  to do: Bodovni sustav, uljepšavanje koda
