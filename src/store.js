@@ -13,5 +13,10 @@ export default {
     lcb: '',
     rcb: '',
     rb: '',
-    gk: ''
+    gk: '',
+    wins: '',
+    draws: '',
+    losses: '',
+    played: '',
+    points: ''
 }

@@ -5,7 +5,7 @@
 
   <div style="text-align:center; font-size:40px; font-family: Cuprum; color:black; width:image width px; position:absolute; left:793px;">
   <img id="fw1" src="playertemplate.png" style="position: absolute;">
-   <select id="selectfw1" v-on:change="counterfw1(); showButton(); bodovifw1();" onchange="document.getElementById('fw1').src = this.value;" style="font-size:20px; position:absolute; left:826px; width:284px;">
+   <select id="selectfw1" v-on:change="counterfw1(); showButton(); bodovifw1(); savestats();" onchange="document.getElementById('fw1').src = this.value;" style="font-size:20px; position:absolute; left:826px; width:284px;">
     <option value="playertemplate.png">Odaberite Napadača</option>
     <option value="bpetkovic.png">Bruno Petković (Dinamo Zagreb)</option>
     <option value="mgavranovic.png">Mario Gavranović (Dinamo Zagreb)</option>
@@ -545,7 +545,7 @@
   </select>
   </div>
 
-<button id="Button" onclick="
+<button id="Button" disabled onclick="
   document.getElementById('selectfw1').disabled=true;
   document.getElementById('selectfw2').disabled=true;
   document.getElementById('selectfw3').disabled=true;
@@ -558,8 +558,32 @@
   document.getElementById('selectdf4').disabled=true;
   document.getElementById('selectgk1').disabled=true;
    "
-   v-on:click="savedb();"
+   v-on:click="savedb(); savestats();"
    style="font-family:Cuprum; font-size:28px; position:absolute; left:1675px; top:550px;">ZAKLJUČAJ TIM</button>
+
+<table style="width: 56%; font-family:Cuprum; font-size:28px; margin-left:320px; color:black; margin-top:650px;">
+  <tr>
+    <th></th>
+    <th></th>
+    <th style="font-size:30px; text-align:center; padding-right:100px;">KLUB</th>
+    <th style="font-size:30px;">ODIGRANI SUSRETI</th>
+    <th style="font-size:30px;">POBJEDE</th>
+    <th style="font-size:30px;">NERIJEŠENE</th>
+    <th style="font-size:30px;">PORAZI</th>
+    <th style="font-size:30px;">BODOVI</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th style="font-size:30px; text-align:center; padding-right:100px;">{{ myteam }}</th>
+    <th style="font-size:30px;">{{ played }}</th>
+    <th style="font-size:30px;">{{ wins }}</th>
+    <th style="font-size:30px;">{{ draws }}</th>
+    <th style="font-size:30px;">{{ losses }}</th>
+    <th style="font-size:30px;">{{ points }}</th>
+  </tr>
+  
+</table>
 
   </div>
 </template>
@@ -580,14 +604,19 @@
     var fw1w1,fw1w2,fw1w3,fw1w4,fw1w5,fw1w6,fw1w7,fw1w8,fw1w9,fw1w10,fw1w11,fw1w12,fw1w13,fw1w14,fw1w15,fw1w16,fw1w17,fw1w18,fw1w19;
     var fw2w1,fw2w2,fw2w3,fw2w4,fw2w5,fw2w6,fw2w7,fw2w8,fw2w9,fw2w10,fw2w11,fw2w12,fw2w13,fw2w14,fw2w15,fw2w16,fw2w17,fw2w18,fw2w19;
     var fw3w1,fw3w2,fw3w3,fw3w4,fw3w5,fw3w6,fw3w7,fw3w8,fw3w9,fw3w10,fw3w11,fw3w12,fw3w13,fw3w14,fw3w15,fw3w16,fw3w17,fw3w18,fw3w19;
-    var mf1w1;
-    var mf2w1;
-    var mf3w1;
-    var df1w1;
-    var df2w1;
-    var df3w1;
-    var df4w1;
-    var gk1w1;
+    var mf1w1,mf1w2,mf1w3,mf1w4,mf1w5,mf1w6,mf1w7,mf1w8,mf1w9,mf1w10,mf1w11,mf1w12,mf1w13,mf1w14,mf1w15,mf1w16,mf1w17,mf1w18,mf1w19;
+    var mf2w1,mf2w2,mf2w3,mf2w4,mf2w5,mf2w6,mf2w7,mf2w8,mf2w9,mf2w10,mf2w11,mf2w12,mf2w13,mf2w14,mf2w15,mf2w16,mf2w17,mf2w18,mf2w19;
+    var mf3w1,mf3w2,mf3w3,mf3w4,mf3w5,mf3w6,mf3w7,mf3w8,mf3w9,mf3w10,mf3w11,mf3w12,mf3w13,mf3w14,mf3w15,mf3w16,mf3w17,mf3w18,mf3w19;
+    var df1w1,df1w2,df1w3,df1w4,df1w5,df1w6,df1w7,df1w8,df1w9,df1w10,df1w11,df1w12,df1w13,df1w14,df1w15,df1w16,df1w17,df1w18,df1w19;
+    var df2w1,df2w2,df2w3,df2w4,df2w5,df2w6,df2w7,df2w8,df2w9,df2w10,df2w11,df2w12,df2w13,df2w14,df2w15,df2w16,df2w17,df2w18,df2w19;
+    var df3w1,df3w2,df3w3,df3w4,df3w5,df3w6,df3w7,df3w8,df3w9,df3w10,df3w11,df3w12,df3w13,df3w14,df3w15,df3w16,df3w17,df3w18,df3w19;
+    var df4w1,df4w2,df4w3,df4w4,df4w5,df4w6,df4w7,df4w8,df4w9,df4w10,df4w11,df4w12,df4w13,df4w14,df4w15,df4w16,df4w17,df4w18,df4w19;
+    var gk1w1,gk1w2,gk1w3,gk1w4,gk1w5,gk1w6,gk1w7,gk1w8,gk1w9,gk1w10,gk1w11,gk1w12,gk1w13,gk1w14,gk1w15,gk1w16,gk1w17,gk1w18,gk1w19;
+    var pobjede=0;
+    var nerijesene=0;
+    var porazi=0;
+    var odigrani=0;
+    var bodovi=0;
     export default {
       data(){
           return store;
@@ -659,64 +688,747 @@
             }
           },
           bodovifw1(){
-            if(document.getElementById('selectfw1').value.includes("petkovic")){
+            if(document.getElementById('selectfw1').value=="bpetkovic.png"){
               fw1w1=3;
+              fw1w2=3;
+              fw1w3=3;
+              fw1w4=1;
+              fw1w5=3;
+              fw1w6=3;
+              fw1w7=0;
+              fw1w8=3;
+              fw1w9=0;
+              fw1w10=3;
+              fw1w11=3;
+              fw1w12=3;
+              fw1w13=3;
+              fw1w14=3;
+              fw1w15=3;
+              fw1w16=1;
+              fw1w17=3;
+              fw1w18=3;
+              fw1w19=3;
+            }
+            else if(document.getElementById('selectfw1').value=="mgavranovic.png"){
+              fw1w1=3;
+              fw1w2=3;
+              fw1w3=3;
+              fw1w4=1;
+              fw1w5=3;
+              fw1w6=3;
+              fw1w7=0;
+              fw1w8=3;
+              fw1w9=0;
+              fw1w10=3;
+              fw1w11=3;
+              fw1w12=3;
+              fw1w13=3;
+              fw1w14=3;
+              fw1w15=3;
+              fw1w16=1;
+              fw1w17=3;
+              fw1w18=3;
+              fw1w19=3;
             }
           },
           bodovifw2(){
-            if(document.getElementById('selectfw2').value.includes("orsic")){
+            if(document.getElementById('selectfw2').value=="morsic.png"){
               fw2w1=3;
+              fw2w2=3;
+              fw2w3=3;
+              fw2w4=1;
+              fw2w5=3;
+              fw2w6=3;
+              fw2w7=0;
+              fw2w8=3;
+              fw2w9=0;
+              fw2w10=3;
+              fw2w11=3;
+              fw2w12=3;
+              fw2w13=3;
+              fw2w14=3;
+              fw2w15=3;
+              fw2w16=1;
+              fw2w17=3;
+              fw2w18=3;
+              fw2w19=3;
             }
           },
           bodovifw3(){
-            if(document.getElementById('selectfw3').value.includes("kadzior")){
+            if(document.getElementById('selectfw3').value=="dkadzior.png"){
               fw3w1=3;
+              fw3w2=3;
+              fw3w3=3;
+              fw3w4=1;
+              fw3w5=3;
+              fw3w6=3;
+              fw3w7=0;
+              fw3w8=3;
+              fw3w9=0;
+              fw3w10=3;
+              fw3w11=3;
+              fw3w12=3;
+              fw3w13=3;
+              fw3w14=3;
+              fw3w15=3;
+              fw3w16=1;
+              fw3w17=3;
+              fw3w18=3;
+              fw3w19=3;
             }
           },
           bodovimf1(){
-            if(document.getElementById('selectmf1').value.includes("olmo")){
+            if(document.getElementById('selectmf1').value=="dolmo.png"){
               mf1w1=3;
+              mf1w2=3;
+              mf1w3=3;
+              mf1w4=1;
+              mf1w5=3;
+              mf1w6=3;
+              mf1w7=0;
+              mf1w8=3;
+              mf1w9=0;
+              mf1w10=3;
+              mf1w11=3;
+              mf1w12=3;
+              mf1w13=3;
+              mf1w14=3;
+              mf1w15=3;
+              mf1w16=1;
+              mf1w17=3;
+              mf1w18=3;
+              mf1w19=3;
             }
           },
           bodovimf2(){
-            if(document.getElementById('selectmf2').value.includes("ademi")){
+            if(document.getElementById('selectmf2').value=="aademi.png"){
               mf2w1=3;
+              mf2w2=3;
+              mf2w3=3;
+              mf2w4=1;
+              mf2w5=3;
+              mf2w6=3;
+              mf2w7=0;
+              mf2w8=3;
+              mf2w9=0;
+              mf2w10=3;
+              mf2w11=3;
+              mf2w12=3;
+              mf2w13=3;
+              mf2w14=3;
+              mf2w15=3;
+              mf2w16=1;
+              mf2w17=3;
+              mf2w18=3;
+              mf2w19=3;
             }
           },
           bodovimf3(){
-            if(document.getElementById('selectmf3').value.includes("moro")){
+            if(document.getElementById('selectmf3').value=="nmoro.png"){
               mf3w1=3;
+              mf3w2=3;
+              mf3w3=3;
+              mf3w4=1;
+              mf3w5=3;
+              mf3w6=3;
+              mf3w7=0;
+              mf3w8=3;
+              mf3w9=0;
+              mf3w10=3;
+              mf3w11=3;
+              mf3w12=3;
+              mf3w13=3;
+              mf3w14=3;
+              mf3w15=3;
+              mf3w16=1;
+              mf3w17=3;
+              mf3w18=3;
+              mf3w19=3;
             }
           },
           bodovidf1(){
-            if(document.getElementById('selectdf1').value.includes("leovac")){
+            if(document.getElementById('selectdf1').value=="mleovac.png"){
               df1w1=3;
+              df1w2=3;
+              df1w3=3;
+              df1w4=1;
+              df1w5=3;
+              df1w6=3;
+              df1w7=0;
+              df1w8=3;
+              df1w9=0;
+              df1w10=3;
+              df1w11=3;
+              df1w12=3;
+              df1w13=3;
+              df1w14=3;
+              df1w15=3;
+              df1w16=1;
+              df1w17=3;
+              df1w18=3;
+              df1w19=3;
             }
           },
           bodovidf2(){
-            if(document.getElementById('selectdf2').value.includes("peric")){
+            if(document.getElementById('selectdf2').value=="dperic.png"){
               df2w1=3;
+              df2w2=3;
+              df2w3=3;
+              df2w4=1;
+              df2w5=3;
+              df2w6=3;
+              df2w7=0;
+              df2w8=3;
+              df2w9=0;
+              df2w10=3;
+              df2w11=3;
+              df2w12=3;
+              df2w13=3;
+              df2w14=3;
+              df2w15=3;
+              df2w16=1;
+              df2w17=3;
+              df2w18=3;
+              df2w19=3;
             }
           },
           bodovidf3(){
-            if(document.getElementById('selectdf3').value.includes("theophilecatherine")){
+            if(document.getElementById('selectdf3').value=="ktheophilecatherine.png"){
               df3w1=3;
+              df3w2=3
+              df3w3=3;
+              df3w4=1;
+              df3w5=3;
+              df3w6=3;
+              df3w7=0;
+              df3w8=3;
+              df3w9=0;
+              df3w10=3;
+              df3w11=3;
+              df3w12=3;
+              df3w13=3;
+              df3w14=3;
+              df3w15=3;
+              df3w16=1;
+              df3w17=3;
+              df3w18=3;
+              df3w19=3;
             }
           },
           bodovidf4(){
-            if(document.getElementById('selectdf4').value.includes("stojanovic")){
+            if(document.getElementById('selectdf4').value=="pstojanovic.png"){
               df4w1=3;
+              df4w2=3;
+              df4w3=3;
+              df4w4=1;
+              df4w5=3;
+              df4w6=3;
+              df4w7=0;
+              df4w8=3;
+              df4w9=0;
+              df4w10=3;
+              df4w11=3;
+              df4w12=3;
+              df4w13=3;
+              df4w14=3;
+              df4w15=3;
+              df4w16=1;
+              df4w17=3;
+              df4w18=3;
+              df4w19=3;
             }
           },
           bodovigk1(){
-            if(document.getElementById('selectgk1').value.includes("livakovic")){
+            if(document.getElementById('selectgk1').value=="dlivakovic.png"){
               gk1w1=3;
+              gk1w2=3;
+              gk1w3=3;
+              gk1w4=1;
+              gk1w5=3;
+              gk1w6=3;
+              gk1w7=0;
+              gk1w8=3;
+              gk1w9=0;
+              gk1w10=3;
+              gk1w11=3;
+              gk1w12=3;
+              gk1w13=3;
+              gk1w14=3;
+              gk1w15=3;
+              gk1w16=1;
+              gk1w17=3;
+              gk1w18=3;
+              gk1w19=3;
             }
           },
           bodoviw1(){
-            console.log(gk1w1)
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w1+fw2w1+fw3w1+mf1w1+mf2w1+mf3w1+df1w1+df2w1+df3w1+df4w1+gk1w1)/11)>=0)&&(((fw1w1+fw2w1+fw3w1+mf1w1+mf2w1+mf3w1+df1w1+df2w1+df3w1+df4w1+gk1w1)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w1+fw2w1+fw3w1+mf1w1+mf2w1+mf3w1+df1w1+df2w1+df3w1+df4w1+gk1w1)/11)>1)&&(((fw1w1+fw2w1+fw3w1+mf1w1+mf2w1+mf3w1+df1w1+df2w1+df3w1+df4w1+gk1w1)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w1+fw2w1+fw3w1+mf1w1+mf2w1+mf3w1+df1w1+df2w1+df3w1+df4w1+gk1w1)/11)>2)&&(((fw1w1+fw2w1+fw3w1+mf1w1+mf2w1+mf3w1+df1w1+df2w1+df3w1+df4w1+gk1w1)/11)<=3)){
+              pobjede++;
+            }
           },
-          savedb() {
+          bodoviw2(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w2+fw2w2+fw3w2+mf1w2+mf2w2+mf3w2+df1w2+df2w2+df3w2+df4w2+gk1w2)/11)>=0)&&(((fw1w2+fw2w2+fw3w2+mf1w2+mf2w2+mf3w2+df1w2+df2w2+df3w2+df4w2+gk1w2)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w2+fw2w2+fw3w2+mf1w2+mf2w2+mf3w2+df1w2+df2w2+df3w2+df4w2+gk1w2)/11)>1)&&(((fw1w2+fw2w2+fw3w2+mf1w2+mf2w2+mf3w2+df1w2+df2w2+df3w2+df4w2+gk1w2)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w2+fw2w2+fw3w2+mf1w2+mf2w2+mf3w2+df1w2+df2w2+df3w2+df4w2+gk1w2)/11)>2)&&(((fw1w2+fw2w2+fw3w2+mf1w2+mf2w2+mf3w2+df1w2+df2w2+df3w2+df4w2+gk1w2)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw3(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w3+fw2w3+fw3w3+mf1w3+mf2w3+mf3w3+df1w3+df2w3+df3w3+df4w3+gk1w3)/11)>=0)&&(((fw1w3+fw2w3+fw3w3+mf1w3+mf2w3+mf3w3+df1w3+df2w3+df3w3+df4w3+gk1w3)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w3+fw2w3+fw3w3+mf1w3+mf2w3+mf3w3+df1w3+df2w3+df3w3+df4w3+gk1w3)/11)>1)&&(((fw1w3+fw2w3+fw3w3+mf1w3+mf2w3+mf3w3+df1w3+df2w3+df3w3+df4w3+gk1w3)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w3+fw2w3+fw3w3+mf1w3+mf2w3+mf3w3+df1w3+df2w3+df3w3+df4w3+gk1w3)/11)>2)&&(((fw1w3+fw2w3+fw3w3+mf1w3+mf2w3+mf3w3+df1w3+df2w3+df3w3+df4w3+gk1w3)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw4(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w4+fw2w4+fw3w4+mf1w4+mf2w4+mf3w4+df1w4+df2w4+df3w4+df4w4+gk1w4)/11)>=0)&&(((fw1w4+fw2w4+fw3w4+mf1w4+mf2w4+mf3w4+df1w4+df2w4+df3w4+df4w4+gk1w4)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w4+fw2w4+fw3w4+mf1w4+mf2w4+mf3w4+df1w4+df2w4+df3w4+df4w4+gk1w4)/11)>1)&&(((fw1w4+fw2w4+fw3w4+mf1w4+mf2w4+mf3w4+df1w4+df2w4+df3w4+df4w4+gk1w4)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w4+fw2w4+fw3w4+mf1w4+mf2w4+mf3w4+df1w4+df2w4+df3w4+df4w4+gk1w4)/11)>2)&&(((fw1w4+fw2w4+fw3w4+mf1w4+mf2w4+mf3w4+df1w4+df2w4+df3w4+df4w4+gk1w4)/11)<=3)){
+              pobjede++;
+            }            
+          },
+          bodoviw5(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w5+fw2w5+fw3w5+mf1w5+mf2w5+mf3w5+df1w5+df2w5+df3w5+df4w5+gk1w5)/11)>=0)&&(((fw1w5+fw2w5+fw3w5+mf1w5+mf2w5+mf3w5+df1w5+df2w5+df3w5+df4w5+gk1w5)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w5+fw2w5+fw3w5+mf1w5+mf2w5+mf3w5+df1w5+df2w5+df3w5+df4w5+gk1w5)/11)>1)&&(((fw1w5+fw2w5+fw3w5+mf1w5+mf2w5+mf3w5+df1w5+df2w5+df3w5+df4w5+gk1w5)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w5+fw2w5+fw3w5+mf1w5+mf2w5+mf3w5+df1w5+df2w5+df3w5+df4w5+gk1w5)/11)>2)&&(((fw1w5+fw2w5+fw3w5+mf1w5+mf2w5+mf3w5+df1w5+df2w5+df3w5+df4w5+gk1w5)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw6(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w6+fw2w6+fw3w6+mf1w6+mf2w6+mf3w6+df1w6+df2w6+df3w6+df4w6+gk1w6)/11)>=0)&&(((fw1w6+fw2w6+fw3w6+mf1w6+mf2w6+mf3w6+df1w6+df2w6+df3w6+df4w6+gk1w6)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w6+fw2w6+fw3w6+mf1w6+mf2w6+mf3w6+df1w6+df2w6+df3w6+df4w6+gk1w6)/11)>1)&&(((fw1w6+fw2w6+fw3w6+mf1w6+mf2w6+mf3w6+df1w6+df2w6+df3w6+df4w6+gk1w6)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w6+fw2w6+fw3w6+mf1w6+mf2w6+mf3w6+df1w6+df2w6+df3w6+df4w6+gk1w6)/11)>2)&&(((fw1w6+fw2w6+fw3w6+mf1w6+mf2w6+mf3w6+df1w6+df2w6+df3w6+df4w6+gk1w6)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw7(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w7+fw2w7+fw3w7+mf1w7+mf2w7+mf3w7+df1w7+df2w7+df3w7+df4w7+gk1w7)/11)>=0)&&(((fw1w7+fw2w7+fw3w7+mf1w7+mf2w7+mf3w7+df1w7+df2w7+df3w7+df4w7+gk1w7)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w7+fw2w7+fw3w7+mf1w7+mf2w7+mf3w7+df1w7+df2w7+df3w7+df4w7+gk1w7)/11)>1)&&(((fw1w7+fw2w7+fw3w7+mf1w7+mf2w7+mf3w7+df1w7+df2w7+df3w7+df4w7+gk1w7)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w7+fw2w7+fw3w7+mf1w7+mf2w7+mf3w7+df1w7+df2w7+df3w7+df4w7+gk1w7)/11)>2)&&(((fw1w7+fw2w7+fw3w7+mf1w7+mf2w7+mf3w7+df1w7+df2w7+df3w7+df4w7+gk1w7)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw8(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w8+fw2w8+fw3w8+mf1w8+mf2w8+mf3w8+df1w8+df2w8+df3w8+df4w8+gk1w8)/11)>=0)&&(((fw1w8+fw2w8+fw3w8+mf1w8+mf2w8+mf3w8+df1w8+df2w8+df3w8+df4w8+gk1w8)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w8+fw2w8+fw3w8+mf1w8+mf2w8+mf3w8+df1w8+df2w8+df3w8+df4w8+gk1w8)/11)>1)&&(((fw1w8+fw2w8+fw3w8+mf1w8+mf2w8+mf3w8+df1w8+df2w8+df3w8+df4w8+gk1w8)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w8+fw2w8+fw3w8+mf1w8+mf2w8+mf3w8+df1w8+df2w8+df3w8+df4w8+gk1w8)/11)>2)&&(((fw1w8+fw2w8+fw3w8+mf1w8+mf2w8+mf3w8+df1w8+df2w8+df3w8+df4w8+gk1w8)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw9(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w9+fw2w9+fw3w9+mf1w9+mf2w9+mf3w9+df1w9+df2w9+df3w9+df4w9+gk1w9)/11)>=0)&&(((fw1w9+fw2w9+fw3w9+mf1w9+mf2w9+mf3w9+df1w9+df2w9+df3w9+df4w9+gk1w9)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w9+fw2w9+fw3w9+mf1w9+mf2w9+mf3w9+df1w9+df2w9+df3w9+df4w9+gk1w9)/11)>1)&&(((fw1w9+fw2w9+fw3w9+mf1w9+mf2w9+mf3w9+df1w9+df2w9+df3w9+df4w9+gk1w9)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w9+fw2w9+fw3w9+mf1w9+mf2w9+mf3w9+df1w9+df2w9+df3w9+df4w9+gk1w9)/11)>2)&&(((fw1w9+fw2w9+fw3w9+mf1w9+mf2w9+mf3w9+df1w9+df2w9+df3w9+df4w9+gk1w9)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw10(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w10+fw2w10+fw3w10+mf1w10+mf2w10+mf3w10+df1w10+df2w10+df3w10+df4w10+gk1w10)/11)>=0)&&(((fw1w10+fw2w10+fw3w10+mf1w10+mf2w10+mf3w10+df1w10+df2w10+df3w10+df4w10+gk1w10)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w10+fw2w10+fw3w10+mf1w10+mf2w10+mf3w10+df1w10+df2w10+df3w10+df4w10+gk1w10)/11)>1)&&(((fw1w10+fw2w10+fw3w10+mf1w10+mf2w10+mf3w10+df1w10+df2w10+df3w10+df4w10+gk1w10)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w10+fw2w10+fw3w10+mf1w10+mf2w10+mf3w10+df1w10+df2w10+df3w10+df4w10+gk1w10)/11)>2)&&(((fw1w10+fw2w10+fw3w10+mf1w10+mf2w10+mf3w10+df1w10+df2w10+df3w10+df4w10+gk1w10)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw11(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w11+fw2w11+fw3w11+mf1w11+mf2w11+mf3w11+df1w11+df2w11+df3w11+df4w11+gk1w11)/11)>=0)&&(((fw1w11+fw2w11+fw3w11+mf1w11+mf2w11+mf3w11+df1w11+df2w11+df3w11+df4w11+gk1w11)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w11+fw2w11+fw3w11+mf1w11+mf2w11+mf3w11+df1w11+df2w11+df3w11+df4w11+gk1w11)/11)>1)&&(((fw1w11+fw2w11+fw3w11+mf1w11+mf2w11+mf3w11+df1w11+df2w11+df3w11+df4w11+gk1w11)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w11+fw2w11+fw3w11+mf1w11+mf2w11+mf3w11+df1w11+df2w11+df3w11+df4w11+gk1w11)/11)>2)&&(((fw1w11+fw2w11+fw3w11+mf1w11+mf2w11+mf3w11+df1w11+df2w11+df3w11+df4w11+gk1w11)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw12(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w12+fw2w12+fw3w12+mf1w12+mf2w12+mf3w12+df1w12+df2w12+df3w12+df4w12+gk1w12)/11)>=0)&&(((fw1w12+fw2w12+fw3w12+mf1w12+mf2w12+mf3w12+df1w12+df2w12+df3w12+df4w12+gk1w12)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w12+fw2w12+fw3w12+mf1w12+mf2w12+mf3w12+df1w12+df2w12+df3w12+df4w12+gk1w12)/11)>1)&&(((fw1w12+fw2w12+fw3w12+mf1w12+mf2w12+mf3w12+df1w12+df2w12+df3w12+df4w12+gk1w12)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w12+fw2w12+fw3w12+mf1w12+mf2w12+mf3w12+df1w12+df2w12+df3w12+df4w12+gk1w12)/11)>2)&&(((fw1w12+fw2w12+fw3w12+mf1w12+mf2w12+mf3w12+df1w12+df2w12+df3w12+df4w12+gk1w12)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw13(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w13+fw2w13+fw3w13+mf1w13+mf2w13+mf3w13+df1w13+df2w13+df3w13+df4w13+gk1w13)/11)>=0)&&(((fw1w13+fw2w13+fw3w13+mf1w13+mf2w13+mf3w13+df1w13+df2w13+df3w13+df4w13+gk1w13)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w13+fw2w13+fw3w13+mf1w13+mf2w13+mf3w13+df1w13+df2w13+df3w13+df4w13+gk1w13)/11)>1)&&(((fw1w13+fw2w13+fw3w13+mf1w13+mf2w13+mf3w13+df1w13+df2w13+df3w13+df4w13+gk1w13)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w13+fw2w13+fw3w13+mf1w13+mf2w13+mf3w13+df1w13+df2w13+df3w13+df4w13+gk1w13)/11)>2)&&(((fw1w13+fw2w13+fw3w13+mf1w13+mf2w13+mf3w13+df1w13+df2w13+df3w13+df4w13+gk1w13)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw14(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w14+fw2w14+fw3w14+mf1w14+mf2w14+mf3w14+df1w14+df2w14+df3w14+df4w14+gk1w14)/11)>=0)&&(((fw1w14+fw2w14+fw3w14+mf1w14+mf2w14+mf3w14+df1w14+df2w14+df3w14+df4w14+gk1w14)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w14+fw2w14+fw3w14+mf1w14+mf2w14+mf3w14+df1w14+df2w14+df3w14+df4w14+gk1w14)/11)>1)&&(((fw1w14+fw2w14+fw3w14+mf1w14+mf2w14+mf3w14+df1w14+df2w14+df3w14+df4w14+gk1w14)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w14+fw2w14+fw3w14+mf1w14+mf2w14+mf3w14+df1w14+df2w14+df3w14+df4w14+gk1w14)/11)>2)&&(((fw1w14+fw2w14+fw3w14+mf1w14+mf2w14+mf3w14+df1w14+df2w14+df3w14+df4w14+gk1w14)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw15(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w15+fw2w15+fw3w15+mf1w15+mf2w15+mf3w15+df1w15+df2w15+df3w15+df4w15+gk1w15)/11)>=0)&&(((fw1w15+fw2w15+fw3w15+mf1w15+mf2w15+mf3w15+df1w15+df2w15+df3w15+df4w15+gk1w15)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w15+fw2w15+fw3w15+mf1w15+mf2w15+mf3w15+df1w15+df2w15+df3w15+df4w15+gk1w15)/11)>1)&&(((fw1w15+fw2w15+fw3w15+mf1w15+mf2w15+mf3w15+df1w15+df2w15+df3w15+df4w15+gk1w15)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w15+fw2w15+fw3w15+mf1w15+mf2w15+mf3w15+df1w15+df2w15+df3w15+df4w15+gk1w15)/11)>2)&&(((fw1w15+fw2w15+fw3w15+mf1w15+mf2w15+mf3w15+df1w15+df2w15+df3w15+df4w15+gk1w15)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw16(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w16+fw2w16+fw3w16+mf1w16+mf2w16+mf3w16+df1w16+df2w16+df3w16+df4w16+gk1w16)/11)>=0)&&(((fw1w16+fw2w16+fw3w16+mf1w16+mf2w16+mf3w16+df1w16+df2w16+df3w16+df4w16+gk1w16)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w16+fw2w16+fw3w16+mf1w16+mf2w16+mf3w16+df1w16+df2w16+df3w16+df4w16+gk1w16)/11)>1)&&(((fw1w16+fw2w16+fw3w16+mf1w16+mf2w16+mf3w16+df1w16+df2w16+df3w16+df4w16+gk1w16)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w16+fw2w16+fw3w16+mf1w16+mf2w16+mf3w16+df1w16+df2w16+df3w16+df4w16+gk1w16)/11)>2)&&(((fw1w16+fw2w16+fw3w16+mf1w16+mf2w16+mf3w16+df1w16+df2w16+df3w16+df4w16+gk1w16)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw17(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w17+fw2w17+fw3w17+mf1w17+mf2w17+mf3w17+df1w17+df2w17+df3w17+df4w17+gk1w17)/11)>=0)&&(((fw1w17+fw2w17+fw3w17+mf1w17+mf2w17+mf3w17+df1w17+df2w17+df3w17+df4w17+gk1w17)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w17+fw2w17+fw3w17+mf1w17+mf2w17+mf3w17+df1w17+df2w17+df3w17+df4w17+gk1w17)/11)>1)&&(((fw1w17+fw2w17+fw3w17+mf1w17+mf2w17+mf3w17+df1w17+df2w17+df3w17+df4w17+gk1w17)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w17+fw2w17+fw3w17+mf1w17+mf2w17+mf3w17+df1w17+df2w17+df3w17+df4w17+gk1w17)/11)>2)&&(((fw1w17+fw2w17+fw3w17+mf1w17+mf2w17+mf3w17+df1w17+df2w17+df3w17+df4w17+gk1w17)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw18(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w18+fw2w18+fw3w18+mf1w18+mf2w18+mf3w18+df1w18+df2w18+df3w18+df4w18+gk1w18)/11)>=0)&&(((fw1w18+fw2w18+fw3w18+mf1w18+mf2w18+mf3w18+df1w18+df2w18+df3w18+df4w18+gk1w18)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w18+fw2w18+fw3w18+mf1w18+mf2w18+mf3w18+df1w18+df2w18+df3w18+df4w18+gk1w18)/11)>1)&&(((fw1w18+fw2w18+fw3w18+mf1w18+mf2w18+mf3w18+df1w18+df2w18+df3w18+df4w18+gk1w18)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w18+fw2w18+fw3w18+mf1w18+mf2w18+mf3w18+df1w18+df2w18+df3w18+df4w18+gk1w18)/11)>2)&&(((fw1w18+fw2w18+fw3w18+mf1w18+mf2w18+mf3w18+df1w18+df2w18+df3w18+df4w18+gk1w18)/11)<=3)){
+              pobjede++;
+            }
+          },
+          bodoviw19(){
+            this.bodovifw1();
+            this.bodovifw2();
+            this.bodovifw3();
+            this.bodovimf1();
+            this.bodovimf2();
+            this.bodovimf3();
+            this.bodovidf1();
+            this.bodovidf2();
+            this.bodovidf3();
+            this.bodovidf4();
+            this.bodovigk1();
+            if((((fw1w19+fw2w19+fw3w19+mf1w19+mf2w19+mf3w19+df1w19+df2w19+df3w19+df4w19+gk1w19)/11)>=0)&&(((fw1w19+fw2w19+fw3w19+mf1w19+mf2w19+mf3w19+df1w19+df2w19+df3w19+df4w19+gk1w19)/11)<=1)){
+              porazi++;
+            }
+            else if((((fw1w19+fw2w19+fw3w19+mf1w19+mf2w19+mf3w19+df1w19+df2w19+df3w19+df4w19+gk1w19)/11)>1)&&(((fw1w19+fw2w19+fw3w19+mf1w19+mf2w19+mf3w19+df1w19+df2w19+df3w19+df4w19+gk1w19)/11)<=2)){
+              nerijesene++;
+            }
+            else if((((fw1w19+fw2w19+fw3w19+mf1w19+mf2w19+mf3w19+df1w19+df2w19+df3w19+df4w19+gk1w19)/11)>2)&&(((fw1w19+fw2w19+fw3w19+mf1w19+mf2w19+mf3w19+df1w19+df2w19+df3w19+df4w19+gk1w19)/11)<=3)){
+              pobjede++;
+            }
+          },
+          odigranisusreti(){
+            this.bodoviw1();
+            this.bodoviw2();
+            this.bodoviw3();
+            this.bodoviw4();
+            this.bodoviw5();
+            this.bodoviw6();
+            this.bodoviw7();
+            this.bodoviw8();
+            this.bodoviw9();
+            this.bodoviw10();
+            this.bodoviw11();
+            this.bodoviw12();
+            this.bodoviw13();
+            this.bodoviw14();
+            this.bodoviw15();
+            this.bodoviw16();
+            this.bodoviw17();
+            this.bodoviw18();
+            this.bodoviw19();
+            odigrani=porazi+nerijesene+pobjede;
+          },
+          ukupnibodovi(){
+            this.odigranisusreti();
+            bodovi=3*pobjede+nerijesene;
+          },
+          savestats(){
+            this.ukupnibodovi();
+            let id = this.userEmail;
+            db.collection("bodovi").doc(id).set({
+                                        wins: pobjede,
+                                        draws: nerijesene,
+                                        losses: porazi,
+                                        played: odigrani,
+                                        points: bodovi
+            })
+          },
+          loadstats(){
+            let id = this.userEmail;
+            db.collection("bodovi").doc(id).get().then(doc =>{
+              if(doc.exists){
+                this.wins=doc.data().wins;
+                this.draws=doc.data().draws;
+                this.losses=doc.data().losses;
+                this.played=doc.data().played;
+                this.points=doc.data().points;
+              }
+            });
+          },
+          savedb(){
           let id = this.userEmail;
           db.collection("timovi").doc(id).set({
                                         st: document.getElementById('selectfw1').value,
@@ -729,7 +1441,8 @@
                                         lcb: document.getElementById('selectdf2').value,
                                         rcb: document.getElementById('selectdf3').value,
                                         rb: document.getElementById('selectdf4').value,
-                                        gk: document.getElementById('selectgk1').value, })
+                                        gk: document.getElementById('selectgk1').value, 
+            })
           },
           loaddb(){
             let id = this.userEmail;
@@ -763,6 +1476,11 @@
       },
       beforeUpdate(){
         this.loaddb();
+        this.loadstats();
+      },
+      mounted(){
+        this.loaddb();
+        this.loadstats();
       }
     }
 </script>
