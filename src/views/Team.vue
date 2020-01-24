@@ -11,6 +11,7 @@
     <option value="mgavranovic.png">Mario Gavranović (Dinamo Zagreb)</option>
     <option value="skulenovic.png">Sandro Kulenović (Dinamo Zagreb)</option>
     <option value="kandric.png">Komnen Andrić (Dinamo Zagreb)</option>
+    <option value="mcuze.png">Mario Ćuže (Dinamo Zagreb)</option>
     <option value="rbaturina.png">Roko Baturina (Dinamo Zagreb)</option>
     <option value="lsipos.png">Leon Šipoš (Dinamo Zagreb)</option>
     <option value="mjakolis.png">Marin Jakoliš (Hajduk Split)</option>
@@ -41,7 +42,6 @@
     <option value="wtchuameni.png">William Tchuameni (Inter Zaprešić)</option>
     <option value="bbilobrk.png">Borna Bilobrk (Inter Zaprešić)</option>
     <option value="mbencic.png">Mihael Benčić (Inter Zaprešić)</option>
-    <option value="mcuze.png">Mario Ćuže (Istra 1961)</option>
     <option value="klaukzemis.png">Karolis Laukžemis (Istra 1961)</option>
     <option value="rperickomsic">Robert Perić-Komšić (Istra 1961)</option>
     <option value="afuentes.png">Adrian Fuentes (Istra 1961)</option>
@@ -68,9 +68,11 @@
     <option value="mpilj.png">Marin Pilj (Osijek)</option>
     <option value="klovric.png">Kristijan Lovrić (Gorica)</option>
     <option value="msroler.png">Martin Šroler (Gorica)</option>
+    <option value="dspikic.png">Dario Špikić (Gorica)</option>
     <option value="muzuni.png">Myrto Uzuni (Lokomotiva Zagreb)</option>
     <option value="ddrozdek.png">Domagoj Drožđek (Lokomotiva Zagreb)</option>
     <option value="jmajic.png">Josip Majić (Lokomotiva Zagreb)</option>
+    <option value="dlovren.png">Davor Lovren (Slaven Belupo)</option>
     <option value="sserderov.png">Serder Serderov (Inter Zaprešić)</option>
     <option value="dbusnja.png">Denis Bušnja (Istra 1961)</option>
     <option value="jmaganjic.png">Josip Maganjić (Istra 1961)</option>
@@ -117,12 +119,12 @@
     <option value="aademi.png">Arijan Ademi (Dinamo Zagreb)</option>
     <option value="nmoro.png">Nikola Moro (Dinamo Zagreb)</option>
     <option value="mdira.png">Marko Đira (Dinamo Zagreb)</option>
+    <option value="ndurasek.png">Neven Đurasek (Dinamo Zagreb)</option>
     <option value="bjradi.png">Bassel Jradi (Hajduk Split)</option>
     <option value="tteklic.png">Tonio Teklić (Hajduk Split)</option>
     <option value="jblagaic.png">Jakov Blagaić (Hajduk Split)</option>
     <option value="mcaktas.png">Mijo Caktaš (Hajduk Split)</option>
     <option value="hbarry.png">Hamza Barry (Hajduk Split)</option>
-    <option value="fbradarić.png">Filip Bradarić (Hajduk Split)</option>
     <option value="dnejasmic.png">Darko Nejašmić (Hajduk Split)</option>
     <option value="sjuric.png">Stanko Jurić (Hajduk Split)</option>
     <option value="akalik.png">Anthony Kalik (Hajduk Split)</option>
@@ -138,18 +140,18 @@
     <option value="kkamenar.png">Karlo Kamenar (Osijek)</option>
     <option value="vjugovic.png">Vedran Jugović (Osijek)</option>
     <option value="mzaper.png">Mihael Žaper (Osijek)</option>
-    <option value="bmioc.png">Benedik Mioč (Osijek)</option>
+    <option value="jljubic.png">Juraj Ljubić (Osijek)</option>
     <option value="jhamad.png">Jiloan Hamad (Gorica)</option>
     <option value="mmaslowski.png">Michal Maslowski (Gorica)</option>
     <option value="jsuk.png">Joey Suk (Gorica)</option>
     <option value="dcanadija.png">Dario Čanađija (Gorica)</option>
     <option value="hbabec.png">Hrvoje Babec (Gorica)</option>
     <option value="mmaloca.png">Martin Maloča (Gorica)</option>
+    <option value="pgolubickas.png">Paulius Golubickas (Gorica)</option>
     <option value="mtolic.png">Marko Tolić (Lokomotiva Zagreb)</option>
     <option value="sammir.png">Sammir (Lokomotiva Zagreb)</option>
     <option value="sgorican.png">Silvio Goričan (Lokomotiva Zagreb)</option>
     <option value="dhalilovic.png">Dino Halilović (Lokomotiva Zagreb)</option>
-    <option value="farezina.png">Filip Arezina (Lokomotiva Zagreb)</option>
     <option value="passane.png">Pape Assane (Lokomotiva Zagreb)</option>
     <option value="kjakic.png">Kristijan Jakić (Lokomotiva Zagreb)</option>
     <option value="ecokaj.png">Enis Čokaj (Lokomotiva Zagreb)</option>
@@ -159,12 +161,12 @@
     <option value="sbacelicgrgic.png">Stipe Bačelić-Grgić (Slaven Belupo)</option>
     <option value="dpuclin.png">David Puclin (Slaven Belupo)</option>
     <option value="gparacki.png">Goran Paracki (Slaven Belupo)</option>
+    <option value="rkamber.png">Robin Kamber (Slaven Belupo)</option>
     <option value="ijajalo.png">Ivan Jajalo (Slaven Belupo)</option>
     <option value="abrkovic.png">Arijan Brković (Slaven Belupo)</option>
     <option value="btsonev.png">Borislav Tsonev (Inter Zaprešić)</option>
     <option value="ipostonjski.png">Igor Postonjski (Inter Zaprešić)</option>
     <option value="fmlinar.png">Frano Mlinar (Inter Zaprešić)</option>
-    <option value="jljubic.png">Juraj Ljubić (Inter Zaprešić)</option>
     <option value="robeng.png">Regan Obeng (Istra 1961)</option>
     <option value="imocinic.png">Ivan Močinić (Istra 1961)</option>
     <option value="mfintic.png">Matija Fintić (Istra 1961)</option>
@@ -177,7 +179,6 @@
     <option value="iposavec.png">Ivan Posavec (Varaždin)</option>
     <option value="ktezak.png">Karlo Tezak (Varaždin)</option>
     <option value="jgueradjou.png">Jessie Guera Djou (Varaždin)</option>
-    <option value="ndurasek.png">Neven Đurasek (Varaždin)</option>
     <option value="jbajandooh.png">Jamal Bajandooh (Varaždin)</option>
     <option value="iroca.png">Ivan Roca (Varaždin)</option>
     <option value="kfucak.png">Kristian Fucak (Varaždin)</option>
@@ -195,12 +196,12 @@
     <option value="aademi.png">Arijan Ademi (Dinamo Zagreb)</option>
     <option value="nmoro.png">Nikola Moro (Dinamo Zagreb)</option>
     <option value="mdira.png">Marko Đira (Dinamo Zagreb)</option>
+    <option value="ndurasek.png">Neven Đurasek (Dinamo Zagreb)</option>
     <option value="bjradi.png">Bassel Jradi (Hajduk Split)</option>
     <option value="tteklic.png">Tonio Teklić (Hajduk Split)</option>
     <option value="jblagaic.png">Jakov Blagaić (Hajduk Split)</option>
     <option value="mcaktas.png">Mijo Caktaš (Hajduk Split)</option>
     <option value="hbarry.png">Hamza Barry (Hajduk Split)</option>
-    <option value="fbradarić.png">Filip Bradarić (Hajduk Split)</option>
     <option value="dnejasmic.png">Darko Nejašmić (Hajduk Split)</option>
     <option value="sjuric.png">Stanko Jurić (Hajduk Split)</option>
     <option value="akalik.png">Anthony Kalik (Hajduk Split)</option>
@@ -216,18 +217,18 @@
     <option value="kkamenar.png">Karlo Kamenar (Osijek)</option>
     <option value="vjugovic.png">Vedran Jugović (Osijek)</option>
     <option value="mzaper.png">Mihael Žaper (Osijek)</option>
-    <option value="bmioc.png">Benedik Mioč (Osijek)</option>
+    <option value="jljubic.png">Juraj Ljubić (Osijek)</option>
     <option value="jhamad.png">Jiloan Hamad (Gorica)</option>
     <option value="mmaslowski.png">Michal Maslowski (Gorica)</option>
     <option value="jsuk.png">Joey Suk (Gorica)</option>
     <option value="dcanadija.png">Dario Čanađija (Gorica)</option>
     <option value="hbabec.png">Hrvoje Babec (Gorica)</option>
     <option value="mmaloca.png">Martin Maloča (Gorica)</option>
+    <option value="pgolubickas.png">Paulius Golubickas (Gorica)</option>
     <option value="mtolic.png">Marko Tolić (Lokomotiva Zagreb)</option>
     <option value="sammir.png">Sammir (Lokomotiva Zagreb)</option>
     <option value="sgorican.png">Silvio Goričan (Lokomotiva Zagreb)</option>
     <option value="dhalilovic.png">Dino Halilović (Lokomotiva Zagreb)</option>
-    <option value="farezina.png">Filip Arezina (Lokomotiva Zagreb)</option>
     <option value="passane.png">Pape Assane (Lokomotiva Zagreb)</option>
     <option value="kjakic.png">Kristijan Jakić (Lokomotiva Zagreb)</option>
     <option value="opetrak.png">Oliver Petrak (Lokomotiva Zagreb)</option>
@@ -236,6 +237,7 @@
     <option value="sbacelicgrgic.png">Stipe Bačelić-Grgić (Slaven Belupo)</option>
     <option value="dpuclin.png">David Puclin (Slaven Belupo)</option>
     <option value="gparacki.png">Goran Paracki (Slaven Belupo)</option>
+    <option value="rkamber.png">Robin Kamber (Slaven Belupo)</option>
     <option value="ijajalo.png">Ivan Jajalo (Slaven Belupo)</option>
     <option value="abrkovic.png">Arijan Brković (Slaven Belupo)</option>
     <option value="btsonev.png">Borislav Tsonev (Inter Zaprešić)</option>
@@ -253,7 +255,6 @@
     <option value="dglavica.png">Dejan Glavica (Varaždin)</option>
     <option value="iposavec.png">Ivan Posavec (Varaždin)</option>
     <option value="jgueradjou.png">Jessie Guera Djou (Varaždin)</option>
-    <option value="ndurasek.png">Neven Đurasek (Varaždin)</option>
     <option value="jbajandooh.png">Jamal Bajandooh (Varaždin)</option>
     <option value="iroca.png">Ivan Roca (Varaždin)</option>
     <option value="kfucak.png">Kristian Fucak (Varaždin)</option>
@@ -271,12 +272,12 @@
     <option value="aademi.png">Arijan Ademi (Dinamo Zagreb)</option>
     <option value="nmoro.png">Nikola Moro (Dinamo Zagreb)</option>
     <option value="mdira.png">Marko Đira (Dinamo Zagreb)</option>
+    <option value="ndurasek.png">Neven Đurasek (Dinamo Zagreb)</option>
     <option value="bjradi.png">Bassel Jradi (Hajduk Split)</option>
     <option value="tteklic.png">Tonio Teklić (Hajduk Split)</option>
     <option value="jblagaic.png">Jakov Blagaić (Hajduk Split)</option>
     <option value="mcaktas.png">Mijo Caktaš (Hajduk Split)</option>
     <option value="hbarry.png">Hamza Barry (Hajduk Split)</option>
-    <option value="fbradarić.png">Filip Bradarić (Hajduk Split)</option>
     <option value="dnejasmic.png">Darko Nejašmić (Hajduk Split)</option>
     <option value="sjuric.png">Stanko Jurić (Hajduk Split)</option>
     <option value="akalik.png">Anthony Kalik (Hajduk Split)</option>
@@ -292,18 +293,18 @@
     <option value="kkamenar.png">Karlo Kamenar (Osijek)</option>
     <option value="vjugovic.png">Vedran Jugović (Osijek)</option>
     <option value="mzaper.png">Mihael Žaper (Osijek)</option>
-    <option value="bmioc.png">Benedik Mioč (Osijek)</option>
+    <option value="jljubic.png">Juraj Ljubić (Osijek)</option>
     <option value="jhamad.png">Jiloan Hamad (Gorica)</option>
     <option value="mmaslowski.png">Michal Maslowski (Gorica)</option>
     <option value="jsuk.png">Joey Suk (Gorica)</option>
     <option value="dcanadija.png">Dario Čanađija (Gorica)</option>
     <option value="hbabec.png">Hrvoje Babec (Gorica)</option>
     <option value="mmaloca.png">Martin Maloča (Gorica)</option>
+    <option value="pgolubickas.png">Paulius Golubickas (Gorica)</option>
     <option value="mtolic.png">Marko Tolić (Lokomotiva Zagreb)</option>
     <option value="sammir.png">Sammir (Lokomotiva Zagreb)</option>
     <option value="sgorican.png">Silvio Goričan (Lokomotiva Zagreb)</option>
     <option value="dhalilovic.png">Dino Halilović (Lokomotiva Zagreb)</option>
-    <option value="farezina.png">Filip Arezina (Lokomotiva Zagreb)</option>
     <option value="passane.png">Pape Assane (Lokomotiva Zagreb)</option>
     <option value="kjakic.png">Kristijan Jakić (Lokomotiva Zagreb)</option>
     <option value="opetrak.png">Oliver Petrak (Lokomotiva Zagreb)</option>
@@ -312,6 +313,7 @@
     <option value="sbacelicgrgic.png">Stipe Bačelić-Grgić (Slaven Belupo)</option>
     <option value="dpuclin.png">David Puclin (Slaven Belupo)</option>
     <option value="gparacki.png">Goran Paracki (Slaven Belupo)</option>
+    <option value="rkamber.png">Robin Kamber (Slaven Belupo)</option>
     <option value="ijajalo.png">Ivan Jajalo (Slaven Belupo)</option>
     <option value="abrkovic.png">Arijan Brković (Slaven Belupo)</option>
     <option value="btsonev.png">Borislav Tsonev (Inter Zaprešić)</option>
@@ -329,7 +331,6 @@
     <option value="dglavica.png">Dejan Glavica (Varaždin)</option>
     <option value="iposavec.png">Ivan Posavec (Varaždin)</option>
     <option value="jgueradjou.png">Jessie Guera Djou (Varaždin)</option>
-    <option value="ndurasek.png">Neven Đurasek (Varaždin)</option>
     <option value="jbajandooh.png">Jamal Bajandooh (Varaždin)</option>
     <option value="iroca.png">Ivan Roca (Varaždin)</option>
     <option value="kfucak.png">Kristian Fucak (Varaždin)</option>
@@ -344,10 +345,10 @@
     <option value="mleovac.png">Marin Leovac (Dinamo Zagreb)</option>
     <option value="dcolina.png">David Čolina (Hajduk Split)</option>
     <option value="pmamic.png">Petar Mamić (Rijeka)</option>
+    <option value="dstefulj.png">Daniel Štefulj (Rijeka)</option>
     <option value="talys.png">Talys (Osijek)</option>
     <option value="lmarin.png">Luka Marin (Osijek)</option>
     <option value="mcabraja.png">Marijan Čabraja (Gorica)</option>
-    <option value="mspicic.png">Matija Špičić (Gorica)</option>
     <option value="smarkovic.png">Stipo Marković (Lokomotiva Zagreb)</option>
     <option value="srozman.png">Siniša Rožman (Lokomotiva Zagreb)</option>
     <option value="bgoda.png">Bruno Goda (Slaven Belupo)</option>
@@ -358,7 +359,7 @@
     <option value="sgonzalez.png">Sergio Gonzalez (Istra 1961)</option>
     <option value="prubic.png">Petar Rubić (Istra 1961)</option>
     <option value="imilicevic.png">Ivan Miličević (Varaždin)</option>
-    <option value="dstefulj.png">Daniel Štefulj (Varaždin)</option>
+    <option value="mspicic.png">Matija Špičić (Varaždin)</option>
     <option value="ksambolec.png">Karlo Sambolec (Varaždin)</option>
   </select>
   </div>
@@ -375,6 +376,7 @@
     <option value="bfranjic.png">Bartol Franjić (Dinamo Zagreb)</option>
     <option value="ssimic.png">Stefan Simić (Hajduk Split)</option>
     <option value="aismajli.png">Ardian Ismajli (Hajduk Split)</option>
+    <option value="nmujakic.png">Nihad Mujakić (Hajduk Split)</option>
     <option value="mvuskovic.png">Mario Vušković (Hajduk Split)</option>
     <option value="svucur.png">Stipe Vučur (Hajduk Split)</option>
     <option value="sradic.png">Stipe Radić (Hajduk Split)</option>
@@ -391,7 +393,6 @@
     <option value="bsutalo.png">Boško Šutalo (Osijek)</option>
     <option value="guti.png">Guti (Osijek)</option>
     <option value="dloncar.png">Danijel Lončar (Osijek)</option>
-    <option value="sradeljic.png">Stjepan Radeljić (Osijek)</option>
     <option value="ajovicic.png">Aleksandar Jovičić (Gorica)</option>
     <option value="kkrizmanic.png">Krešimir Krizmanić (Gorica)</option>
     <option value="msteenvoorden.png">Matthew Steenvoorden (Gorica)</option>
@@ -400,15 +401,16 @@
     <option value="dkolinger.png">Denis Kolinger (Lokomotiva Zagreb)</option>
     <option value="jmersinaj.png">Jon Mersinaj (Lokomotiva Zagreb)</option>
     <option value="mleskovic.png">Marko Lešković (Lokomotiva Zagreb)</option>
+    <option value="djokovic.png">Dušan Joković (Lokomotiva Zagreb)</option>
     <option value="msuto.png">Mate Šuto (Lokomotiva Zagreb)</option>
     <option value="lsmoljo.png">Luka Smoljo (Lokomotiva Zagreb)</option>
     <option value="bmikulic.png">Božo Mikulić (Slaven Belupo)</option>
     <option value="vmedimorec.png">Vinko Međimorec (Slaven Belupo)</option>
     <option value="mzirdum.png">Matko Zirdum (Slaven Belupo)</option>
-    <option value="knowak.png">Krystian Nowak (Slaven Belupo)</option>
     <option value="tbozic.png">Tomislav Božić (Slaven Belupo)</option>
     <option value="fhlevnjak.png">Filip Hlevnjak (Slaven Belupo)</option>
     <option value="nsoldo.png">Nikola Soldo (Inter Zaprešić)</option>
+    <option value="dvanbruggen.png">Damian van Bruggen (Inter Zaprešić)</option>
     <option value="dgrgic.png">Damir Grgić (Inter Zaprešić)</option>
     <option value="msavic.png">Milan Savić (Inter Zaprešić)</option>
     <option value="itatomirovic.png">Ivan Tatomirović (Inter Zaprešić)</option>
@@ -436,6 +438,7 @@
     <option value="bfranjic.png">Bartol Franjić (Dinamo Zagreb)</option>
     <option value="ssimic.png">Stefan Simić (Hajduk Split)</option>
     <option value="aismajli.png">Ardian Ismajli (Hajduk Split)</option>
+    <option value="nmujakic.png">Nihad Mujakić (Hajduk Split)</option>
     <option value="mvuskovic.png">Mario Vušković (Hajduk Split)</option>
     <option value="svucur.png">Stipe Vučur (Hajduk Split)</option>
     <option value="sradic.png">Stipe Radić (Hajduk Split)</option>
@@ -451,7 +454,6 @@
     <option value="bsutalo.png">Boško Šutalo (Osijek)</option>
     <option value="guti.png">Guti (Osijek)</option>
     <option value="dloncar.png">Danijel Lončar (Osijek)</option>
-    <option value="sradeljic.png">Stjepan Radeljić (Osijek)</option>
     <option value="ajovicic.png">Aleksandar Jovičić (Gorica)</option>
     <option value="kkrizmanic.png">Krešimir Krizmanić (Gorica)</option>
     <option value="msteenvoorden.png">Matthew Steenvoorden (Gorica)</option>
@@ -460,14 +462,15 @@
     <option value="dkolinger.png">Denis Kolinger (Lokomotiva Zagreb)</option>
     <option value="jmersinaj.png">Jon Mersinaj (Lokomotiva Zagreb)</option>
     <option value="mleskovic.png">Marko Lešković (Lokomotiva Zagreb)</option>
+    <option value="djokovic.png">Dušan Joković (Lokomotiva Zagreb)</option>
     <option value="msuto.png">Mate Šuto (Lokomotiva Zagreb)</option>
     <option value="bmikulic.png">Božo Mikulić (Slaven Belupo)</option>
     <option value="vmedimorec.png">Vinko Međimorec (Slaven Belupo)</option>
     <option value="mzirdum.png">Matko Zirdum (Slaven Belupo)</option>
-    <option value="knowak.png">Krystian Nowak (Slaven Belupo)</option>
     <option value="tbozic.png">Tomislav Božić (Slaven Belupo)</option>
     <option value="fhlevnjak.png">Filip Hlevnjak (Slaven Belupo)</option>
     <option value="nsoldo.png">Nikola Soldo (Inter Zaprešić)</option>
+    <option value="dvanbruggen.png">Damian van Bruggen (Inter Zaprešić)</option>
     <option value="dgrgic.png">Damir Grgić (Inter Zaprešić)</option>
     <option value="msavic.png">Milan Savić (Inter Zaprešić)</option>
     <option value="itatomirovic.png">Ivan Tatomirović (Inter Zaprešić)</option>
@@ -502,6 +505,7 @@
     <option value="pperisa.png">Patrik Periša (Gorica)</option>
     <option value="fkaracic.png">Fran Karačić (Lokomotiva Zagreb)</option>
     <option value="pgluhakovic.png">Petar Gluhaković (Lokomotiva Zagreb)</option>
+    <option value="mjuric.png">Marko Jurić (Lokomotiva Zagreb)</option>
     <option value="mkaramarko.png">Marko Karamarko (Slaven Belupo)</option>
     <option value="miharos.png">Marko Iharoš (Slaven Belupo)</option>
     <option value="abosec.png">Antonio Bosec (Inter Zaprešić)</option>
@@ -535,6 +539,7 @@
     <option value="khendija.png">Krunoslav Hendija (Lokomotiva Zagreb)</option>
     <option value="ifilipovic.png">Ivan Filipović (Slaven Belupo)</option>
     <option value="ajezina.png">Antonio Ježina (Slaven Belupo)</option>
+    <option value="ohadzikic.png">Osman Hadžikić (Inter Zaprešić)</option>
     <option value="zfrelih.png">Žiga Frelih (Inter Zaprešić)</option>
     <option value="mmatkovic.png">Mladen Matković (Inter Zaprešić)</option>
     <option value="jcondric.png">Josip Čondrić (Istra 1961)</option>
@@ -688,7 +693,13 @@
             }
           },
           bodovifw1(){
-            if(document.getElementById('selectfw1').value=="bpetkovic.png"){
+            if((document.getElementById('selectfw1').value=="bpetkovic.png")||
+              (document.getElementById('selectfw1').value=="mgavranovic.png")||
+              (document.getElementById('selectfw1').value=="skulenovic.png")||
+              (document.getElementById('selectfw1').value=="kandric.png")||
+              (document.getElementById('selectfw1').value=="mcuze.png")||
+              (document.getElementById('selectfw1').value=="rbaturina.png")||
+              (document.getElementById('selectfw1').value=="lsipos.png")){
               fw1w1=3;
               fw1w2=3;
               fw1w3=3;
@@ -709,30 +720,105 @@
               fw1w18=3;
               fw1w19=3;
             }
-            else if(document.getElementById('selectfw1').value=="mgavranovic.png"){
+            else if((document.getElementById('selectfw1').value=="mjakolis.png")||
+              (document.getElementById('selectfw1').value=="idelic.png")||
+              (document.getElementById('selectfw1').value=="lkrekovic.png")){
               fw1w1=3;
               fw1w2=3;
               fw1w3=3;
-              fw1w4=1;
+              fw1w4=0;
               fw1w5=3;
-              fw1w6=3;
-              fw1w7=0;
-              fw1w8=3;
-              fw1w9=0;
-              fw1w10=3;
+              fw1w6=0;
+              fw1w7=3;
+              fw1w8=1;
+              fw1w9=3;
+              fw1w10=1;
               fw1w11=3;
-              fw1w12=3;
+              fw1w12=1;
               fw1w13=3;
-              fw1w14=3;
+              fw1w14=0;
               fw1w15=3;
               fw1w16=1;
+              fw1w17=0;
+              fw1w18=1;
+              fw1w19=3;
+            }
+            else if((document.getElementById('selectfw1').value=="amcolak.png")||
+              (document.getElementById('selectfw1').value=="jpuljic.png")||
+              (document.getElementById('selectfw1').value=="mbabic.png")||
+              (document.getElementById('selectfw1').value=="mmatulja.png")){
+              fw1w1=3;
+              fw1w2=3;
+              fw1w3=3;
+              fw1w4=0;
+              fw1w5=1;
+              fw1w6=0;
+              fw1w7=1;
+              fw1w8=1;
+              fw1w9=3;
+              fw1w10=3;
+              fw1w11=1;
+              fw1w12=3;
+              fw1w13=0;
+              fw1w14=0;
+              fw1w15=0;
+              fw1w16=3;
               fw1w17=3;
               fw1w18=3;
               fw1w19=3;
+            }
+            else if((document.getElementById('selectfw1').value=="mmaric.png")||
+              (document.getElementById('selectfw1').value=="amance.png")||
+              (document.getElementById('selectfw1').value=="jmbakogu.png")||
+              (document.getElementById('selectfw1').value=="jspoljaric.png")||
+              (document.getElementById('selectfw1').value=="ddrenabeljo.png")){
+              fw1w1=3;
+              fw1w2=0;
+              fw1w3=3;
+              fw1w4=1;
+              fw1w5=1;
+              fw1w6=3;
+              fw1w7=1;
+              fw1w8=1;
+              fw1w9=0;
+              fw1w10=3;
+              fw1w11=3;
+              fw1w12=1;
+              fw1w13=0;
+              fw1w14=3;
+              fw1w15=0;
+              fw1w16=3;
+              fw1w17=1;
+              fw1w18=3;
+              fw1w19=3;
+            }
+            else if((document.getElementById('selectfw1').value=="cndiaye.png")||
+              (document.getElementById('selectfw1').value=="lzwolinski.png")){
+              fw1w1=1;
+              fw1w2=3;
+              fw1w3=0;
+              fw1w4=3;
+              fw1w5=0;
+              fw1w6=1;
+              fw1w7=3;
+              fw1w8=1;
+              fw1w9=0;
+              fw1w10=3;
+              fw1w11=0;
+              fw1w12=0;
+              fw1w13=3;
+              fw1w14=3;
+              fw1w15=1;
+              fw1w16=3;
+              fw1w17=0;
+              fw1w18=3;
+              fw1w19=1;
             }
           },
           bodovifw2(){
-            if(document.getElementById('selectfw2').value=="morsic.png"){
+            if((document.getElementById('selectfw2').value=="morsic.png")||
+              (document.getElementById('selectfw2').value=="iatiemwen.png")||
+              (document.getElementById('selectfw2').value=="amarin.png")){
               fw2w1=3;
               fw2w2=3;
               fw2w3=3;
@@ -753,9 +839,100 @@
               fw2w18=3;
               fw2w19=3;
             }
+            else if((document.getElementById('selectfw2').value=="jairo.png")||
+              (document.getElementById('selectfw2').value=="idolcek.png")){
+              fw2w1=3;
+              fw2w2=3;
+              fw2w3=3;
+              fw2w4=0;
+              fw2w5=3;
+              fw2w6=0;
+              fw2w7=3;
+              fw2w8=1;
+              fw2w9=3;
+              fw2w10=1;
+              fw2w11=3;
+              fw2w12=1;
+              fw2w13=3;
+              fw2w14=0;
+              fw2w15=3;
+              fw2w16=1;
+              fw2w17=0;
+              fw2w18=1;
+              fw2w19=3;
+            }
+            else if((document.getElementById('selectfw2').value=="agorgon.png")||
+              (document.getElementById('selectfw2').value=="mvuk.png")){
+              fw2w1=3;
+              fw2w2=3;
+              fw2w3=3;
+              fw2w4=0;
+              fw2w5=1;
+              fw2w6=0;
+              fw2w7=1;
+              fw2w8=1;
+              fw2w9=3;
+              fw2w10=3;
+              fw2w11=1;
+              fw2w12=3;
+              fw2w13=0;
+              fw2w14=0;
+              fw2w15=0;
+              fw2w16=3;
+              fw2w17=3;
+              fw2w18=3;
+              fw2w19=3;
+            }
+            else if((document.getElementById('selectfw2').value=="pbockaj.png")||
+              (document.getElementById('selectfw2').value=="mndockyt.png")||
+              (document.getElementById('selectfw2').value=="mpilj.png")){
+              fw2w1=3;
+              fw2w2=0;
+              fw2w3=3;
+              fw2w4=1;
+              fw2w5=1;
+              fw2w6=3;
+              fw2w7=1;
+              fw2w8=1;
+              fw2w9=0;
+              fw2w10=3;
+              fw2w11=3;
+              fw2w12=1;
+              fw2w13=0;
+              fw2w14=3;
+              fw2w15=0;
+              fw2w16=3;
+              fw2w17=1;
+              fw2w18=3;
+              fw2w19=3;
+            }
+            else if((document.getElementById('selectfw2').value=="klovric.png")||
+              (document.getElementById('selectfw2').value=="msroler.png")||
+              (document.getElementById('selectfw2').value=="dspikic.png")){
+              fw2w1=1;
+              fw2w2=3;
+              fw2w3=0;
+              fw2w4=3;
+              fw2w5=0;
+              fw2w6=1;
+              fw2w7=3;
+              fw2w8=1;
+              fw2w9=0;
+              fw2w10=3;
+              fw2w11=0;
+              fw2w12=0;
+              fw2w13=3;
+              fw2w14=3;
+              fw2w15=1;
+              fw2w16=3;
+              fw2w17=0;
+              fw2w18=3;
+              fw2w19=1;
+            }
           },
           bodovifw3(){
-            if(document.getElementById('selectfw3').value=="dkadzior.png"){
+            if((document.getElementById('selectfw3').value=="dkadzior.png")||
+              (document.getElementById('selectfw3').value=="ihajrovic.png")){
               fw3w1=3;
               fw3w2=3;
               fw3w3=3;
@@ -776,9 +953,105 @@
               fw3w18=3;
               fw3w19=3;
             }
+            else if((document.getElementById('selectfw3').value=="seduok.png")||
+              (document.getElementById('selectfw3').value=="ftahiraj.png")){
+              fw3w1=3;
+              fw3w2=3;
+              fw3w3=3;
+              fw3w4=0;
+              fw3w5=3;
+              fw3w6=0;
+              fw3w7=3;
+              fw3w8=1;
+              fw3w9=3;
+              fw3w10=1;
+              fw3w11=3;
+              fw3w12=1;
+              fw3w13=3;
+              fw3w14=0;
+              fw3w15=3;
+              fw3w16=1;
+              fw3w17=0;
+              fw3w18=1;
+              fw3w19=3;
+            }
+            else if((document.getElementById('selectfw3').value=="macosty.png")||
+              (document.getElementById('selectfw3').value=="rmuric.png")){
+              fw3w1=3;
+              fw3w2=3;
+              fw3w3=3;
+              fw3w4=0;
+              fw3w5=1;
+              fw3w6=0;
+              fw3w7=1;
+              fw3w8=1;
+              fw3w9=3;
+              fw3w10=3;
+              fw3w11=1;
+              fw3w12=3;
+              fw3w13=0;
+              fw3w14=0;
+              fw3w15=0;
+              fw3w16=3;
+              fw3w17=3;
+              fw3w18=3;
+              fw3w19=3;
+            }
+            else if(document.getElementById('selectfw3').value=="egrezda.png"){
+              fw3w1=3;
+              fw3w2=0;
+              fw3w3=3;
+              fw3w4=1;
+              fw3w5=1;
+              fw3w6=3;
+              fw3w7=1;
+              fw3w8=1;
+              fw3w9=0;
+              fw3w10=3;
+              fw3w11=3;
+              fw3w12=1;
+              fw3w13=0;
+              fw3w14=3;
+              fw3w15=0;
+              fw3w16=3;
+              fw3w17=1;
+              fw3w18=3;
+              fw3w19=3;
+            }
+            else if((document.getElementById('selectfw3').value=="jmathieu.png")||
+              (document.getElementById('selectfw3').value=="mdvornekovic.png")){
+              fw3w1=1;
+              fw3w2=3;
+              fw3w3=0;
+              fw3w4=3;
+              fw3w5=0;
+              fw3w6=1;
+              fw3w7=3;
+              fw3w8=1;
+              fw3w9=0;
+              fw3w10=3;
+              fw3w11=0;
+              fw3w12=0;
+              fw3w13=3;
+              fw3w14=3;
+              fw3w15=1;
+              fw3w16=3;
+              fw3w17=0;
+              fw3w18=3;
+              fw3w19=1;
+            }
           },
           bodovimf1(){
-            if(document.getElementById('selectmf1').value=="dolmo.png"){
+            if((document.getElementById('selectmf1').value=="dolmo.png")||
+              (document.getElementById('selectmf1').value=="agojak.png")||
+              (document.getElementById('selectmf1').value=="livanusec.png")||
+              (document.getElementById('selectmf1').value=="dolmo.png")||
+              (document.getElementById('selectmf1').value=="lmajer.png")||
+              (document.getElementById('selectmf1').value=="aademi.png")||
+              (document.getElementById('selectmf1').value=="dolmo.png")||
+              (document.getElementById('selectmf1').value=="nmoro.png")||
+              (document.getElementById('selectmf1').value=="mdira.png")||
+              (document.getElementById('selectmf1').value=="ndurasek.png")){
               mf1w1=3;
               mf1w2=3;
               mf1w3=3;
@@ -799,9 +1072,126 @@
               mf1w18=3;
               mf1w19=3;
             }
+            else if((document.getElementById('selectmf1').value=="bjradi.png")||
+              (document.getElementById('selectmf1').value=="tteklic.png")||
+              (document.getElementById('selectmf1').value=="jblagaic.png")||
+              (document.getElementById('selectmf1').value=="mcaktas.png")||
+              (document.getElementById('selectmf1').value=="hbarry.png")||
+              (document.getElementById('selectmf1').value=="dnejasmic.png")||
+              (document.getElementById('selectmf1').value=="sjuric.png")||
+              (document.getElementById('selectmf1').value=="akalik.png")){
+              mf1w1=3;
+              mf1w2=3;
+              mf1w3=3;
+              mf1w4=0;
+              mf1w5=3;
+              mf1w6=0;
+              mf1w7=3;
+              mf1w8=1;
+              mf1w9=3;
+              mf1w10=1;
+              mf1w11=3;
+              mf1w12=1;
+              mf1w13=3;
+              mf1w14=0;
+              mf1w15=3;
+              mf1w16=1;
+              mf1w17=0;
+              mf1w18=1;
+              mf1w19=3;
+            }
+            else if((document.getElementById('selectmf1').value=="fandrijasevic.png")||
+              (document.getElementById('selectmf1').value=="thalilovic.png")||
+              (document.getElementById('selectmf1').value=="diglesias.png")||
+              (document.getElementById('selectmf1').value=="dpavicic.png")||
+              (document.getElementById('selectmf1').value=="sloncar.png")||
+              (document.getElementById('selectmf1').value=="ilepinjica.png")||
+              (document.getElementById('selectmf1').value=="lcapan.png")){
+              mf1w1=3;
+              mf1w2=3;
+              mf1w3=3;
+              mf1w4=0;
+              mf1w5=1;
+              mf1w6=0;
+              mf1w7=1;
+              mf1w8=1;
+              mf1w9=3;
+              mf1w10=3;
+              mf1w11=1;
+              mf1w12=3;
+              mf1w13=0;
+              mf1w14=0;
+              mf1w15=0;
+              mf1w16=3;
+              mf1w17=3;
+              mf1w18=3;
+              mf1w19=3;
+            }
+            else if((document.getElementById('selectmf1').value=="lkleinheisler.png")||
+              (document.getElementById('selectmf1').value=="dlepa.png")||
+              (document.getElementById('selectmf1').value=="kkamenar.png")||
+              (document.getElementById('selectmf1').value=="vjugovic.png")||
+              (document.getElementById('selectmf1').value=="mzaper.png")||
+              (document.getElementById('selectmf1').value=="mljubic.png")){
+              mf1w1=3;
+              mf1w2=0;
+              mf1w3=3;
+              mf1w4=1;
+              mf1w5=1;
+              mf1w6=3;
+              mf1w7=1;
+              mf1w8=1;
+              mf1w9=0;
+              mf1w10=3;
+              mf1w11=3;
+              mf1w12=1;
+              mf1w13=0;
+              mf1w14=3;
+              mf1w15=0;
+              mf1w16=3;
+              mf1w17=1;
+              mf1w18=3;
+              mf1w19=3;
+            }
+            else if((document.getElementById('selectmf1').value=="jhamad.png")||
+              (document.getElementById('selectmf1').value=="mmaslowski.png")||
+              (document.getElementById('selectmf1').value=="jsuk.png")||
+              (document.getElementById('selectmf1').value=="dcanadija.png")||
+              (document.getElementById('selectmf1').value=="hbabec.png")||
+              (document.getElementById('selectmf1').value=="mmaloca.png")||
+              (document.getElementById('selectmf1').value=="pgolubickas.png")){
+              mf1w1=1;
+              mf1w2=3;
+              mf1w3=0;
+              mf1w4=3;
+              mf1w5=0;
+              mf1w6=1;
+              mf1w7=3;
+              mf1w8=1;
+              mf1w9=0;
+              mf1w10=3;
+              mf1w11=0;
+              mf1w12=0;
+              mf1w13=3;
+              mf1w14=3;
+              mf1w15=1;
+              mf1w16=3;
+              mf1w17=0;
+              mf1w18=3;
+              mf1w19=1;
+            }
           },
           bodovimf2(){
-            if(document.getElementById('selectmf2').value=="aademi.png"){
+            if((document.getElementById('selectmf2').value=="dolmo.png")||
+              (document.getElementById('selectmf2').value=="agojak.png")||
+              (document.getElementById('selectmf2').value=="livanusec.png")||
+              (document.getElementById('selectmf2').value=="dolmo.png")||
+              (document.getElementById('selectmf2').value=="lmajer.png")||
+              (document.getElementById('selectmf2').value=="aademi.png")||
+              (document.getElementById('selectmf2').value=="dolmo.png")||
+              (document.getElementById('selectmf2').value=="nmoro.png")||
+              (document.getElementById('selectmf2').value=="mdira.png")||
+              (document.getElementById('selectmf2').value=="ndurasek.png")){
               mf2w1=3;
               mf2w2=3;
               mf2w3=3;
@@ -822,9 +1212,126 @@
               mf2w18=3;
               mf2w19=3;
             }
+            else if((document.getElementById('selectmf2').value=="bjradi.png")||
+              (document.getElementById('selectmf2').value=="tteklic.png")||
+              (document.getElementById('selectmf2').value=="jblagaic.png")||
+              (document.getElementById('selectmf2').value=="mcaktas.png")||
+              (document.getElementById('selectmf2').value=="hbarry.png")||
+              (document.getElementById('selectmf2').value=="dnejasmic.png")||
+              (document.getElementById('selectmf2').value=="sjuric.png")||
+              (document.getElementById('selectmf2').value=="akalik.png")){
+              mf2w1=3;
+              mf2w2=3;
+              mf2w3=3;
+              mf2w4=0;
+              mf2w5=3;
+              mf2w6=0;
+              mf2w7=3;
+              mf2w8=1;
+              mf2w9=3;
+              mf2w10=1;
+              mf2w11=3;
+              mf2w12=1;
+              mf2w13=3;
+              mf2w14=0;
+              mf2w15=3;
+              mf2w16=1;
+              mf2w17=0;
+              mf2w18=1;
+              mf2w19=3;
+            }
+            else if((document.getElementById('selectmf2').value=="fandrijasevic.png")||
+              (document.getElementById('selectmf2').value=="thalilovic.png")||
+              (document.getElementById('selectmf2').value=="diglesias.png")||
+              (document.getElementById('selectmf2').value=="dpavicic.png")||
+              (document.getElementById('selectmf2').value=="sloncar.png")||
+              (document.getElementById('selectmf2').value=="ilepinjica.png")||
+              (document.getElementById('selectmf2').value=="lcapan.png")){
+              mf2w1=3;
+              mf2w2=3;
+              mf2w3=3;
+              mf2w4=0;
+              mf2w5=1;
+              mf2w6=0;
+              mf2w7=1;
+              mf2w8=1;
+              mf2w9=3;
+              mf2w10=3;
+              mf2w11=1;
+              mf2w12=3;
+              mf2w13=0;
+              mf2w14=0;
+              mf2w15=0;
+              mf2w16=3;
+              mf2w17=3;
+              mf2w18=3;
+              mf2w19=3;
+            }
+            else if((document.getElementById('selectmf2').value=="lkleinheisler.png")||
+              (document.getElementById('selectmf2').value=="dlepa.png")||
+              (document.getElementById('selectmf2').value=="kkamenar.png")||
+              (document.getElementById('selectmf2').value=="vjugovic.png")||
+              (document.getElementById('selectmf2').value=="mzaper.png")||
+              (document.getElementById('selectmf2').value=="mljubic.png")){
+              mf2w1=3;
+              mf2w2=0;
+              mf2w3=3;
+              mf2w4=1;
+              mf2w5=1;
+              mf2w6=3;
+              mf2w7=1;
+              mf2w8=1;
+              mf2w9=0;
+              mf2w10=3;
+              mf2w11=3;
+              mf2w12=1;
+              mf2w13=0;
+              mf2w14=3;
+              mf2w15=0;
+              mf2w16=3;
+              mf2w17=1;
+              mf2w18=3;
+              mf2w19=3;
+            }
+            else if((document.getElementById('selectmf2').value=="jhamad.png")||
+              (document.getElementById('selectmf2').value=="mmaslowski.png")||
+              (document.getElementById('selectmf2').value=="jsuk.png")||
+              (document.getElementById('selectmf2').value=="dcanadija.png")||
+              (document.getElementById('selectmf2').value=="hbabec.png")||
+              (document.getElementById('selectmf2').value=="mmaloca.png")||
+              (document.getElementById('selectmf2').value=="pgolubickas.png")){
+              mf2w1=1;
+              mf2w2=3;
+              mf2w3=0;
+              mf2w4=3;
+              mf2w5=0;
+              mf2w6=1;
+              mf2w7=3;
+              mf2w8=1;
+              mf2w9=0;
+              mf2w10=3;
+              mf2w11=0;
+              mf2w12=0;
+              mf2w13=3;
+              mf2w14=3;
+              mf2w15=1;
+              mf2w16=3;
+              mf2w17=0;
+              mf2w18=3;
+              mf2w19=1;
+            }
           },
           bodovimf3(){
-            if(document.getElementById('selectmf3').value=="nmoro.png"){
+            if((document.getElementById('selectmf3').value=="dolmo.png")||
+              (document.getElementById('selectmf3').value=="agojak.png")||
+              (document.getElementById('selectmf3').value=="livanusec.png")||
+              (document.getElementById('selectmf3').value=="dolmo.png")||
+              (document.getElementById('selectmf3').value=="lmajer.png")||
+              (document.getElementById('selectmf3').value=="aademi.png")||
+              (document.getElementById('selectmf3').value=="dolmo.png")||
+              (document.getElementById('selectmf3').value=="nmoro.png")||
+              (document.getElementById('selectmf3').value=="mdira.png")||
+              (document.getElementById('selectmf3').value=="ndurasek.png")){
               mf3w1=3;
               mf3w2=3;
               mf3w3=3;
@@ -845,9 +1352,118 @@
               mf3w18=3;
               mf3w19=3;
             }
+            else if((document.getElementById('selectmf3').value=="bjradi.png")||
+              (document.getElementById('selectmf3').value=="tteklic.png")||
+              (document.getElementById('selectmf3').value=="jblagaic.png")||
+              (document.getElementById('selectmf3').value=="mcaktas.png")||
+              (document.getElementById('selectmf3').value=="hbarry.png")||
+              (document.getElementById('selectmf3').value=="dnejasmic.png")||
+              (document.getElementById('selectmf3').value=="sjuric.png")||
+              (document.getElementById('selectmf3').value=="akalik.png")){
+              mf3w1=3;
+              mf3w2=3;
+              mf3w3=3;
+              mf3w4=0;
+              mf3w5=3;
+              mf3w6=0;
+              mf3w7=3;
+              mf3w8=1;
+              mf3w9=3;
+              mf3w10=1;
+              mf3w11=3;
+              mf3w12=1;
+              mf3w13=3;
+              mf3w14=0;
+              mf3w15=3;
+              mf3w16=1;
+              mf3w17=0;
+              mf3w18=1;
+              mf3w19=3;
+            }
+            else if((document.getElementById('selectmf3').value=="fandrijasevic.png")||
+              (document.getElementById('selectmf3').value=="thalilovic.png")||
+              (document.getElementById('selectmf3').value=="diglesias.png")||
+              (document.getElementById('selectmf3').value=="dpavicic.png")||
+              (document.getElementById('selectmf3').value=="sloncar.png")||
+              (document.getElementById('selectmf3').value=="ilepinjica.png")||
+              (document.getElementById('selectmf3').value=="lcapan.png")){
+              mf3w1=3;
+              mf3w2=3;
+              mf3w3=3;
+              mf3w4=0;
+              mf3w5=1;
+              mf3w6=0;
+              mf3w7=1;
+              mf3w8=1;
+              mf3w9=3;
+              mf3w10=3;
+              mf3w11=1;
+              mf3w12=3;
+              mf3w13=0;
+              mf3w14=0;
+              mf3w15=0;
+              mf3w16=3;
+              mf3w17=3;
+              mf3w18=3;
+              mf3w19=3;
+            }
+            else if((document.getElementById('selectmf3').value=="lkleinheisler.png")||
+              (document.getElementById('selectmf3').value=="dlepa.png")||
+              (document.getElementById('selectmf3').value=="kkamenar.png")||
+              (document.getElementById('selectmf3').value=="vjugovic.png")||
+              (document.getElementById('selectmf3').value=="mzaper.png")||
+              (document.getElementById('selectmf3').value=="mljubic.png")){
+              mf3w1=3;
+              mf3w2=0;
+              mf3w3=3;
+              mf3w4=1;
+              mf3w5=1;
+              mf3w6=3;
+              mf3w7=1;
+              mf3w8=1;
+              mf3w9=0;
+              mf3w10=3;
+              mf3w11=3;
+              mf3w12=1;
+              mf3w13=0;
+              mf3w14=3;
+              mf3w15=0;
+              mf3w16=3;
+              mf3w17=1;
+              mf3w18=3;
+              mf3w19=3;
+            }
+            else if((document.getElementById('selectmf3').value=="jhamad.png")||
+              (document.getElementById('selectmf3').value=="mmaslowski.png")||
+              (document.getElementById('selectmf3').value=="jsuk.png")||
+              (document.getElementById('selectmf3').value=="dcanadija.png")||
+              (document.getElementById('selectmf3').value=="hbabec.png")||
+              (document.getElementById('selectmf3').value=="mmaloca.png")||
+              (document.getElementById('selectmf3').value=="pgolubickas.png")){
+              mf3w1=1;
+              mf3w2=3;
+              mf3w3=0;
+              mf3w4=3;
+              mf3w5=0;
+              mf3w6=1;
+              mf3w7=3;
+              mf3w8=1;
+              mf3w9=0;
+              mf3w10=3;
+              mf3w11=0;
+              mf3w12=0;
+              mf3w13=3;
+              mf3w14=3;
+              mf3w15=1;
+              mf3w16=3;
+              mf3w17=0;
+              mf3w18=3;
+              mf3w19=1;
+            }
           },
           bodovidf1(){
-            if(document.getElementById('selectdf1').value=="mleovac.png"){
+            if((document.getElementById('selectdf1').value=="mleovac.png")||
+              (document.getElementById('selectdf1').value=="fmoubandje.png")){
               df1w1=3;
               df1w2=3;
               df1w3=3;
@@ -868,9 +1484,100 @@
               df1w18=3;
               df1w19=3;
             }
+            else if(document.getElementById('selectdf1').value=="dcolina.png"){
+              df1w1=3;
+              df1w2=3;
+              df1w3=3;
+              df1w4=0;
+              df1w5=3;
+              df1w6=0;
+              df1w7=3;
+              df1w8=1;
+              df1w9=3;
+              df1w10=1;
+              df1w11=3;
+              df1w12=1;
+              df1w13=3;
+              df1w14=0;
+              df1w15=3;
+              df1w16=1;
+              df1w17=0;
+              df1w18=1;
+              df1w19=3;
+            }
+            else if((document.getElementById('selectdf1').value=="pmamic.png")||
+              (document.getElementById('selectdf1').value=="dstefulj.png")){
+              df1w1=3;
+              df1w2=3;
+              df1w3=3;
+              df1w4=0;
+              df1w5=1;
+              df1w6=0;
+              df1w7=1;
+              df1w8=1;
+              df1w9=3;
+              df1w10=3;
+              df1w11=1;
+              df1w12=3;
+              df1w13=0;
+              df1w14=0;
+              df1w15=0;
+              df1w16=3;
+              df1w17=3;
+              df1w18=3;
+              df1w19=3;
+            }
+            else if((document.getElementById('selectdf1').value=="talys.png")||
+              (document.getElementById('selectdf1').value=="lmarin.png")){
+              df1w1=3;
+              df1w2=0;
+              df1w3=3;
+              df1w4=1;
+              df1w5=1;
+              df1w6=3;
+              df1w7=1;
+              df1w8=1;
+              df1w9=0;
+              df1w10=3;
+              df1w11=3;
+              df1w12=1;
+              df1w13=0;
+              df1w14=3;
+              df1w15=0;
+              df1w16=3;
+              df1w17=1;
+              df1w18=3;
+              df1w19=3;
+            }
+            else if(document.getElementById('selectdf1').value=="mcabraja.png"){
+              df1w1=1;
+              df1w2=3;
+              df1w3=0;
+              df1w4=3;
+              df1w5=0;
+              df1w6=1;
+              df1w7=3;
+              df1w8=1;
+              df1w9=0;
+              df1w10=3;
+              df1w11=0;
+              df1w12=0;
+              df1w13=3;
+              df1w14=3;
+              df1w15=1;
+              df1w16=3;
+              df1w17=0;
+              df1w18=3;
+              df1w19=1;
+            }
           },
           bodovidf2(){
-            if(document.getElementById('selectdf2').value=="dperic.png"){
+            if((document.getElementById('selectdf2').value=="dperic.png")||
+              (document.getElementById('selectdf2').value=="ktheophilecatherine.png")||
+              (document.getElementById('selectdf2').value=="edilaver.png")||
+              (document.getElementById('selectdf2').value=="jgvardiol.png")||
+              (document.getElementById('selectdf2').value=="jsutalo.png")||
+              (document.getElementById('selectdf2').value=="bfranjic.png")){
               df2w1=3;
               df2w2=3;
               df2w3=3;
@@ -891,9 +1598,118 @@
               df2w18=3;
               df2w19=3;
             }
+            else if((document.getElementById('selectdf2').value=="ssimic.png")||
+              (document.getElementById('selectdf2').value=="aismajli.png")||
+              (document.getElementById('selectdf2').value=="nmujakic.png")||
+              (document.getElementById('selectdf2').value=="mvuskovic.png")||
+              (document.getElementById('selectdf2').value=="svucur.png")||
+              (document.getElementById('selectdf2').value=="sradic.png")||
+              (document.getElementById('selectdf2').value=="ldellova.png")){
+              df2w1=3;
+              df2w2=3;
+              df2w3=3;
+              df2w4=0;
+              df2w5=3;
+              df2w6=0;
+              df2w7=3;
+              df2w8=1;
+              df2w9=3;
+              df2w10=1;
+              df2w11=3;
+              df2w12=1;
+              df2w13=3;
+              df2w14=0;
+              df2w15=3;
+              df2w16=1;
+              df2w17=0;
+              df2w18=1;
+              df2w19=3;
+            }
+            else if((document.getElementById('selectdf2').value=="hsmolcic.png")||
+              (document.getElementById('selectdf2').value=="ngalovic.png")||
+              (document.getElementById('selectdf2').value=="jescoval.png")||
+              (document.getElementById('selectdf2').value=="lsimic.png")||
+              (document.getElementById('selectdf2').value=="dvelkovski.png")||
+              (document.getElementById('selectdf2').value=="jcelikovic.png")||
+              (document.getElementById('selectdf2').value=="lmikulica.png")){
+              df2w1=3;
+              df2w2=3;
+              df2w3=3;
+              df2w4=0;
+              df2w5=1;
+              df2w6=0;
+              df2w7=1;
+              df2w8=1;
+              df2w9=3;
+              df2w10=3;
+              df2w11=1;
+              df2w12=3;
+              df2w13=0;
+              df2w14=0;
+              df2w15=0;
+              df2w16=3;
+              df2w17=3;
+              df2w18=3;
+              df2w19=3;
+            }
+            else if((document.getElementById('selectdf2').value=="mskoric.png")||
+              (document.getElementById('selectdf2').value=="amajstorovic.png")||
+              (document.getElementById('selectdf2').value=="bsutalo.png")||
+              (document.getElementById('selectdf2').value=="guti.png")||
+              (document.getElementById('selectdf2').value=="dloncar.png")){
+              df2w1=3;
+              df2w2=0;
+              df2w3=3;
+              df2w4=1;
+              df2w5=1;
+              df2w6=3;
+              df2w7=1;
+              df2w8=1;
+              df2w9=0;
+              df2w10=3;
+              df2w11=3;
+              df2w12=1;
+              df2w13=0;
+              df2w14=3;
+              df2w15=0;
+              df2w16=3;
+              df2w17=1;
+              df2w18=3;
+              df2w19=3;
+            }
+            else if((document.getElementById('selectdf2').value=="ajovicic.png")||
+              (document.getElementById('selectdf2').value=="kkrizmanic.png")||
+              (document.getElementById('selectdf2').value=="msteenvoorden.png")||
+              (document.getElementById('selectdf2').value=="mjcelic.png")||
+              (document.getElementById('selectdf2').value=="nljubisavljevic.png")){
+              df2w1=1;
+              df2w2=3;
+              df2w3=0;
+              df2w4=3;
+              df2w5=0;
+              df2w6=1;
+              df2w7=3;
+              df2w8=1;
+              df2w9=0;
+              df2w10=3;
+              df2w11=0;
+              df2w12=0;
+              df2w13=3;
+              df2w14=3;
+              df2w15=1;
+              df2w16=3;
+              df2w17=0;
+              df2w18=3;
+              df2w19=1;
+            }
           },
           bodovidf3(){
-            if(document.getElementById('selectdf3').value=="ktheophilecatherine.png"){
+            if((document.getElementById('selectdf3').value=="dperic.png")||
+              (document.getElementById('selectdf3').value=="ktheophilecatherine.png")||
+              (document.getElementById('selectdf3').value=="edilaver.png")||
+              (document.getElementById('selectdf3').value=="jgvardiol.png")||
+              (document.getElementById('selectdf3').value=="jsutalo.png")||
+              (document.getElementById('selectdf3').value=="bfranjic.png")){
               df3w1=3;
               df3w2=3
               df3w3=3;
@@ -914,9 +1730,115 @@
               df3w18=3;
               df3w19=3;
             }
+            else if((document.getElementById('selectdf3').value=="ssimic.png")||
+              (document.getElementById('selectdf3').value=="aismajli.png")||
+              (document.getElementById('selectdf3').value=="nmujakic.png")||
+              (document.getElementById('selectdf3').value=="mvuskovic.png")||
+              (document.getElementById('selectdf3').value=="svucur.png")||
+              (document.getElementById('selectdf3').value=="sradic.png")||
+              (document.getElementById('selectdf3').value=="ldellova.png")){
+              df3w1=3;
+              df3w2=3;
+              df3w3=3;
+              df3w4=0;
+              df3w5=3;
+              df3w6=0;
+              df3w7=3;
+              df3w8=1;
+              df3w9=3;
+              df3w10=1;
+              df3w11=3;
+              df3w12=1;
+              df3w13=3;
+              df3w14=0;
+              df3w15=3;
+              df3w16=1;
+              df3w17=0;
+              df3w18=1;
+              df3w19=3;
+            }
+            else if((document.getElementById('selectdf3').value=="hsmolcic.png")||
+              (document.getElementById('selectdf3').value=="ngalovic.png")||
+              (document.getElementById('selectdf3').value=="jescoval.png")||
+              (document.getElementById('selectdf3').value=="lsimic.png")||
+              (document.getElementById('selectdf3').value=="dvelkovski.png")||
+              (document.getElementById('selectdf3').value=="jcelikovic.png")||
+              (document.getElementById('selectdf3').value=="lmikulica.png")){
+              df3w1=3;
+              df3w2=3;
+              df3w3=3;
+              df3w4=0;
+              df3w5=1;
+              df3w6=0;
+              df3w7=1;
+              df3w8=1;
+              df3w9=3;
+              df3w10=3;
+              df3w11=1;
+              df3w12=3;
+              df3w13=0;
+              df3w14=0;
+              df3w15=0;
+              df3w16=3;
+              df3w17=3;
+              df3w18=3;
+              df3w19=3;
+            }
+            else if((document.getElementById('selectdf3').value=="mskoric.png")||
+              (document.getElementById('selectdf3').value=="amajstorovic.png")||
+              (document.getElementById('selectdf3').value=="bsutalo.png")||
+              (document.getElementById('selectdf3').value=="guti.png")||
+              (document.getElementById('selectdf3').value=="dloncar.png")){
+              df3w1=3;
+              df3w2=0;
+              df3w3=3;
+              df3w4=1;
+              df3w5=1;
+              df3w6=3;
+              df3w7=1;
+              df3w8=1;
+              df3w9=0;
+              df3w10=3;
+              df3w11=3;
+              df3w12=1;
+              df3w13=0;
+              df3w14=3;
+              df3w15=0;
+              df3w16=3;
+              df3w17=1;
+              df3w18=3;
+              df3w19=3;
+            }
+            else if((document.getElementById('selectdf3').value=="ajovicic.png")||
+              (document.getElementById('selectdf3').value=="kkrizmanic.png")||
+              (document.getElementById('selectdf3').value=="msteenvoorden.png")||
+              (document.getElementById('selectdf3').value=="mjcelic.png")||
+              (document.getElementById('selectdf3').value=="nljubisavljevic.png")){
+              df3w1=1;
+              df3w2=3;
+              df3w3=0;
+              df3w4=3;
+              df3w5=0;
+              df3w6=1;
+              df3w7=3;
+              df3w8=1;
+              df3w9=0;
+              df3w10=3;
+              df3w11=0;
+              df3w12=0;
+              df3w13=3;
+              df3w14=3;
+              df3w15=1;
+              df3w16=3;
+              df3w17=0;
+              df3w18=3;
+              df3w19=1;
+            }
           },
           bodovidf4(){
-            if(document.getElementById('selectdf4').value=="pstojanovic.png"){
+            if((document.getElementById('selectdf4').value=="pstojanovic.png")||
+              (document.getElementById('selectdf4').value=="smoharrami.png")||
+              (document.getElementById('selectdf4').value=="thrvoj.png")){
               df4w1=3;
               df4w2=3;
               df4w3=3;
@@ -937,9 +1859,100 @@
               df4w18=3;
               df4w19=3;
             }
+            else if((document.getElementById('selectdf4').value=="jjuranovic.png")||
+              (document.getElementById('selectdf4').value=="jbasic.png")){
+              df4w1=3;
+              df4w2=3;
+              df4w3=3;
+              df4w4=0;
+              df4w5=3;
+              df4w6=0;
+              df4w7=3;
+              df4w8=1;
+              df4w9=3;
+              df4w10=1;
+              df4w11=3;
+              df4w12=1;
+              df4w13=3;
+              df4w14=0;
+              df4w15=3;
+              df4w16=1;
+              df4w17=0;
+              df4w18=1;
+              df4w19=3;
+            }
+            else if((document.getElementById('selectdf4').value=="itomecak.png")||
+              (document.getElementById('selectdf4').value=="mraspopovic.png")){
+              df4w1=3;
+              df4w2=3;
+              df4w3=3;
+              df4w4=0;
+              df4w5=1;
+              df4w6=0;
+              df4w7=1;
+              df4w8=1;
+              df4w9=3;
+              df4w10=3;
+              df4w11=1;
+              df4w12=3;
+              df4w13=0;
+              df4w14=0;
+              df4w15=0;
+              df4w16=3;
+              df4w17=3;
+              df4w18=3;
+              df4w19=3;
+            }
+            else if((document.getElementById('selectdf4').value=="isilva.png")||
+              (document.getElementById('selectdf4').value=="agrgic.png")||
+              (document.getElementById('selectdf4').value=="tsorsa.png")||
+              (document.getElementById('selectdf4').value=="ttodoroski.png")){
+              df4w1=3;
+              df4w2=0;
+              df4w3=3;
+              df4w4=1;
+              df4w5=1;
+              df4w6=3;
+              df4w7=1;
+              df4w8=1;
+              df4w9=0;
+              df4w10=3;
+              df4w11=3;
+              df4w12=1;
+              df4w13=0;
+              df4w14=3;
+              df4w15=0;
+              df4w16=3;
+              df4w17=1;
+              df4w18=3;
+              df4w19=3;
+            }
+            else if((document.getElementById('selectdf4').value=="mmuhammed.png")||
+              (document.getElementById('selectdf4').value=="pperisa.png")){
+              df4w1=1;
+              df4w2=3;
+              df4w3=0;
+              df4w4=3;
+              df4w5=0;
+              df4w6=1;
+              df4w7=3;
+              df4w8=1;
+              df4w9=0;
+              df4w10=3;
+              df4w11=0;
+              df4w12=0;
+              df4w13=3;
+              df4w14=3;
+              df4w15=1;
+              df4w16=3;
+              df4w17=0;
+              df4w18=3;
+              df4w19=1;
+            }
           },
           bodovigk1(){
-            if(document.getElementById('selectgk1').value=="dlivakovic.png"){
+            if((document.getElementById('selectgk1').value=="dlivakovic.png")||
+            (document.getElementById('selectgk1').value=="dzagorac.png")){
               gk1w1=3;
               gk1w2=3;
               gk1w3=3;
@@ -959,6 +1972,97 @@
               gk1w17=3;
               gk1w18=3;
               gk1w19=3;
+            }
+            else if((document.getElementById('selectdf2').value=="jposavec.png")||
+              (document.getElementById('selectdf2').value=="mljubic.png")||
+              (document.getElementById('selectdf2').value=="gblazevic.png")||
+              (document.getElementById('selectdf2').value=="dmatijas.png")){
+              gk1w1=3;
+              gk1w2=3;
+              gk1w3=3;
+              gk1w4=0;
+              gk1w5=3;
+              gk1w6=0;
+              gk1w7=3;
+              gk1w8=1;
+              gk1w9=3;
+              gk1w10=1;
+              gk1w11=3;
+              gk1w12=1;
+              gk1w13=3;
+              gk1w14=0;
+              gk1w15=3;
+              gk1w16=1;
+              gk1w17=0;
+              gk1w18=1;
+              gk1w19=3;
+            }
+            else if((document.getElementById('selectgk1').value=="iprskalo.png")||
+              (document.getElementById('selectgk1').value=="ipandur.png")||
+              (document.getElementById('selectgk1').value=="dnwolokor.png")){
+              gk1w1=3;
+              gk1w2=3;
+              gk1w3=3;
+              gk1w4=0;
+              gk1w5=1;
+              gk1w6=0;
+              gk1w7=1;
+              gk1w8=1;
+              gk1w9=3;
+              gk1w10=3;
+              gk1w11=1;
+              gk1w12=3;
+              gk1w13=0;
+              gk1w14=0;
+              gk1w15=0;
+              gk1w16=3;
+              gk1w17=3;
+              gk1w18=3;
+              gk1w19=3;
+            }
+            else if((document.getElementById('selectgk1').value=="iivusic.png")||
+              (document.getElementById('selectgk1').value=="mmalenica.png")){
+              gk1w1=3;
+              gk1w2=0;
+              gk1w3=3;
+              gk1w4=1;
+              gk1w5=1;
+              gk1w6=3;
+              gk1w7=1;
+              gk1w8=1;
+              gk1w9=0;
+              gk1w10=3;
+              gk1w11=3;
+              gk1w12=1;
+              gk1w13=0;
+              gk1w14=3;
+              gk1w15=0;
+              gk1w16=3;
+              gk1w17=1;
+              gk1w18=3;
+              gk1w19=3;
+            }
+            else if((document.getElementById('selectgk1').value=="kkahlina.png")||
+              (document.getElementById('selectgk1').value=="icovic.png")){
+              gk1w1=1;
+              gk1w2=3;
+              gk1w3=0;
+              gk1w4=3;
+              gk1w5=0;
+              gk1w6=1;
+              gk1w7=3;
+              gk1w8=1;
+              gk1w9=0;
+              gk1w10=3;
+              gk1w11=0;
+              gk1w12=0;
+              gk1w13=3;
+              gk1w14=3;
+              gk1w15=1;
+              gk1w16=3;
+              gk1w17=0;
+              gk1w18=3;
+              gk1w19=1;
             }
           },
           bodoviw1(){
