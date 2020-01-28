@@ -3,29 +3,35 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <router-link v-if="!authenticated" class="navbar-brand" :to="{name: 'home'}"><img src="logo.png" width="250" height="80"></router-link>
       <router-link v-if="authenticated" class="navbar-brand" :to="{name: 'team'}"><img src="logo.png" width="250" height="80"></router-link>
-      <router-link v-if="authenticated" class="btn btn-info mr-2" to="/tablica">TABLICA</router-link>
-      <router-link v-if="authenticated" class="btn btn-info" to="/team">MOJ TIM</router-link>
+      <router-link v-if="authenticated" class="btn btn-info mr-2" to="/tablica" id="properfont">TABLICA</router-link>
+      <router-link v-if="authenticated" class="btn btn-info" to="/team" id="properfont">MOJ TIM</router-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         </ul>
-        <router-link v-if="!authenticated" class="btn btn-outline my-2 my-sm-0 mr-2" to="/login">Prijava</router-link>
-        <span v-if="authenticated">
+        <router-link v-if="!authenticated" class="btn btn-outline my-2 my-sm-0 mr-2" to="/login" id="properfont">Prijava</router-link>
+        <span v-if="authenticated" id="properfont">
                   {{ myuser }}
-                  <a @click="logout" class="btn btn-info my-2 my-sm-0 mr-2" href="#">Odjava</a>
+                  <a @click="logout" class="btn btn-info my-2 my-sm-0 mr-2" href="#" id="properfont">Odjava</a>
         </span>
-        <router-link v-if="!authenticated" class="btn btn-outline my-2 my-sm-0 mr-2" to="/register">Registracija</router-link>
+        <router-link v-if="!authenticated" class="btn btn-outline my-2 my-sm-0 mr-2" to="/register" id="properfont">Registracija</router-link>
       </div>
     </nav>
 
     <router-view/>
 
-    <div id="footer" class="text-center mt-5">@FantasyHNL - Matej Crkvenac</div>
+    <div id="footer" class="text-center mt-5" style="font-family:Cuprum; font-size:20px;">@FantasyHNL - Matej Crkvenac</div>
   </div>
 </template>
 
+<style >
+  #properfont{
+    font-family:Cuprum;
+    font-size:30px;
+  }
+</style>
 
 <script type="text/javascript">
 import store from '@/store.js'

@@ -1,18 +1,18 @@
 <template>
-  <div class="jumbotron jumbotron-fluid" style="padding: 0.5em; background-image: url(teren.jpg); background-repeat:no-repeat; background-size:90%; height: 900px; background-position: left">
-  <h1 class="display-2" style="font-family:Cuprum; text-align:center; margin-right:100px; color: black; font-size:90px;"><b>1. HNL</b></h1>
-  <table style="width: 56%; font-family:Cuprum; font-size:28px; margin-left:320px; color:black; margin-top:30px;">
+  <div class="jumbotron jumbotron-fluid" id="jumbo" style="background-image: url(teren.jpg);">
+  <h1 class="display-2" id="naslov"><b>1. HNL</b></h1>
+  <table id="tablica1">
   <tr>
     <th></th>
     <th></th>
-    <th style="font-size:30px; text-align:center; padding-right:100px;">KLUB</th>
-    <th style="font-size:30px;">OS</th>
-    <th style="font-size:30px;">P</th>
-    <th style="font-size:30px;">N</th>
-    <th style="font-size:30px;">I</th>
-    <th style="font-size:30px;">GZ</th>
-    <th style="font-size:30px;">GP</th>
-    <th style="font-size:30px;">B</th>
+    <th id="hdr1">KLUB</th>
+    <th id="hdr2">OS</th>
+    <th id="hdr2">P</th>
+    <th id="hdr2">N</th>
+    <th id="hdr2">I</th>
+    <th id="hdr2">GZ</th>
+    <th id="hdr2">GP</th>
+    <th id="hdr2">B</th>
   </tr>
   <tr>
     <td colspan="2" style="padding-left:50px;"> <img src="dinamo.png" width="32px" height="40px"></td>
@@ -126,26 +126,26 @@
   </tr>
 </table>
 
-<table style="width: 56%; font-family:Cuprum; font-size:28px; margin-left:320px; color:black; margin-top:100px;">
+<table id="tablica2">
   <tr>
     <th></th>
     <th></th>
-    <th style="font-size:30px; text-align:center; padding-right:100px;">KLUB</th>
-    <th style="font-size:30px;">ODIGRANI SUSRETI</th>
-    <th style="font-size:30px;">POBJEDE</th>
-    <th style="font-size:30px;">NERIJEŠENE</th>
-    <th style="font-size:30px;">PORAZI</th>
-    <th style="font-size:30px;">BODOVI</th>
+    <th id="hdr3">KLUB</th>
+    <th id="hdr3">ODIGRANI SUSRETI</th>
+    <th id="hdr3">POBJEDE</th>
+    <th id="hdr3">NERIJEŠENE</th>
+    <th id="hdr3">PORAZI</th>
+    <th id="hdr3">BODOVI</th>
   </tr>
   <tr>
     <th></th>
     <th></th>
-    <th style="font-size:30px; text-align:center; padding-right:100px;">{{ myteam }}</th>
-    <th style="font-size:30px;">{{ played }}</th>
-    <th style="font-size:30px;">{{ wins }}</th>
-    <th style="font-size:30px;">{{ draws }}</th>
-    <th style="font-size:30px;">{{ losses }}</th>
-    <th style="font-size:30px;">{{ points }}</th>
+    <th id="hdr3">{{ myteam }}</th>
+    <th id="hdr3">{{ played }}</th>
+    <th id="hdr3">{{ wins }}</th>
+    <th id="hdr3">{{ draws }}</th>
+    <th id="hdr3">{{ losses }}</th>
+    <th id="hdr3">{{ points }}</th>
   </tr>
   
 </table>
@@ -153,12 +153,60 @@
 </template>
 
 <style>
-table {
+  table{
     border: none;
     border-collapse: separate;
     text-align: left;
     border-spacing: 0px;
-}
+  }
+
+  #hdr1{
+    font-size:30px;
+    text-align:center;
+    padding-right:100px;
+  }
+  #hdr2{
+    font-size:30px;
+  }
+  #hdr3{
+    font-size:30px;
+    text-align:center;
+    padding-right:50px;
+  }
+  #jumbo{
+    padding: 0.5em;
+    background-repeat:no-repeat;
+    background-size: 1710px 1080px;
+    height: 900px;
+    background-position: left;
+  }
+  #naslov{
+    font-family:Cuprum;
+    text-align:center;
+    margin-right:100px;
+    color: black;
+    font-size:90px;
+  }
+  #tablica1{
+    width:56%;
+    font-family:Cuprum;
+    font-size:28px;
+    margin-left:320px;
+    color:black;
+    margin-top:30px;
+    position:absolute;
+  }
+  #tablica2{
+    width:56%;
+    font-family:Cuprum;
+    font-size:28px;
+    margin-left:320px;
+    color:black;
+    margin-top:100px;
+    margin-top:640px;
+    position:absolute;
+  }
+
 tr:nth-child(even) {background-color: #f2f2f2;}
 tr:nth-child(odd) {background-color: #ffffff;}
 </style>
