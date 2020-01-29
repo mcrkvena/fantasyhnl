@@ -369,7 +369,7 @@
       <option value="dsadiku.png">Drilon Sadiku (Istra 1961)</option>
       <option value="dglavica.png">Dejan Glavica (Varaždin)</option>
       <option value="iposavec.png">Ivan Posavec (Varaždin)</option>
-      <option value="ktezak.png">Karlo Težak(Varaždin)</option>
+      <option value="ktezak.png">Karlo Težak (Varaždin)</option>
       <option value="syokoyama.png">Shohei Yokoyama (Varaždin)</option>
       <option value="jgueradjou.png">Jessie Guera Djou (Varaždin)</option>
       <option value="ndurasek.png">Neven Đurasek (Varaždin)</option>
@@ -631,7 +631,7 @@
 </button>
 
 <button
-  v-on:click="savestats();"
+  v-on:click="savestats(); refresh();"
   id="tipkaupdate">
     AŽURIRAJ PODATKE
 </button>
@@ -1660,7 +1660,7 @@
               fw3w18=0;
               fw3w19=0;
             }
-            else if(document.getElementById('selectf3').value=="jmitrovic.png"){
+            else if(document.getElementById('selectfw3').value=="jmitrovic.png"){
               fw3w1=1;
               fw3w2=0;
               fw3w3=0;
@@ -4258,6 +4258,9 @@
                 this.points=doc.data().points;
               }
             });
+          },
+          refresh(){
+            setTimeout(() => window.location.reload(), 500);
           },
           savedb(){
           let id = this.userEmail;
