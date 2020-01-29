@@ -614,18 +614,7 @@
   </div>
 
 <button
-  id="Button" disabled onclick="
-  document.getElementById('selectfw1').disabled=true;
-  document.getElementById('selectfw2').disabled=true;
-  document.getElementById('selectfw3').disabled=true;
-  document.getElementById('selectmf1').disabled=true;
-  document.getElementById('selectmf2').disabled=true;
-  document.getElementById('selectmf3').disabled=true;
-  document.getElementById('selectdf1').disabled=true;
-  document.getElementById('selectdf2').disabled=true;
-  document.getElementById('selectdf3').disabled=true;
-  document.getElementById('selectdf4').disabled=true;
-  document.getElementById('selectgk1').disabled=true;"
+  id="Button" disabled
   v-on:click="savestats(); savedb();">
     ZAKLJUČAJ TIM
 </button>
