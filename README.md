@@ -16,7 +16,7 @@ Ciljana publika: ljubitelji nogometa
 
 # KAKO APLIKACIJA FUNKCIONIRA
 
-Registracija: Korisnik pri registraciji osim emaila i lozinke upisuje username (koji se prikazuje pored tipke odjave) i naziv svog tima koji postaje naslov u kartici Moj Tim (team.vue). Ti se podaci također šalju u na bazu podataka u firebase.
+Registracija: Korisnik pri registraciji osim emaila i lozinke upisuje korisničko ime (koji se prikazuje pored tipke odjave) i naziv svog tima koji postaje naslov u kartici Moj Tim (team.vue). Ti se podaci također šalju u na bazu podataka u firebase.
 
 Prijava: Korisnik mora upisati samo svoj email i lozinku.
 
