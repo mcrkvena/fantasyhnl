@@ -27,5 +27,4 @@ Bodovanje: Svaki igrač ima 0, 1 ili 3 boda za svako kolo, ovisno o tome je li n
 
 Update 17.1.2020.: localStorage zamijenjen firebase firestore-om
 Update 21.1.2020.: napravljen bodovni sustav
-
-\WORK IN PROGRESS// to do: uljepšavanje koda, dodavanje podataka za igrače
+Update 28.1.2020.: uređen kod, dodane slike svih igrača, popravljene uočene greške
